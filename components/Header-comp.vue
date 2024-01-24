@@ -1,0 +1,21 @@
+<template> 
+    <div class="bg-emerald-300 flex justify-between align-middle p-4">
+        <div>
+            <h1>
+                perdee coffee
+            </h1>
+        </div>
+        <div>
+            <ul class="list-none m-0 p-0 gap-4">
+                <li class="inline mr-4"><a href="#home" class="text-white decoration-gray-50">Home</a></li>
+                <li class="inline mr-4"><a href="#menu" class="text-white decoration-gray-50">Our Menu</a></li>
+                <li class="inline mr-4"><a href="#about" class="text-white decoration-gray-50">This Is Us</a></li>
+                <li class="inline mr-4"><a href="#contact" class="text-white decoration-gray-50">Contact Us</a></li>
+                <li class="inline mr-4"><a href="#login" class="text-white decoration-gray-50">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+</template>
+<script>
+
+</script>
