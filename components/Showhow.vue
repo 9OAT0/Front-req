@@ -18,6 +18,3 @@ defineProps({
     }
 })
 </script>
-<style scoped>
-
-</style>
