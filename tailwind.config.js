@@ -2,7 +2,13 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        notthesamegreen: "#7F9E71",
+        NavBarBG : "#CDB992",
+        ShowHowBG : "#FCFCDD"
+      }
+    },
   },
   plugins: [],
 }

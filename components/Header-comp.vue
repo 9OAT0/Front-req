@@ -1,5 +1,5 @@
 <template> 
-    <div class="bg-emerald-300 flex justify-between align-middle p-4">
+    <div class="bg-NavBarBG flex justify-between align-middle p-4">
         <div>
             <h1>
                 perdee coffee
