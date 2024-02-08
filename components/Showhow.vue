@@ -5,7 +5,7 @@
         <p class="text-5xl mb-0">{{text}}</p>
         <p class="text-xl mt-0">{{minitext}}</p>
         <button class="inline-block pt-3 pb-3 pl-3 pr-3
-        bg-gray-50 uppercase rounded-md cursor-pointer mt-5">See More</button>
+        bg-gray-50 uppercase rounded-md cursor-pointer mt-5"><a :href="button">See More</a></button>
     </div>
     <div class="bg-green-200">
         <img :src="image" alt="" />
@@ -25,15 +25,19 @@ defineProps({
       'image': {
     type: String,
     default: ''
+    },
+    'button': {
+        type: String,
+        default: ''
     }}
+
 )
 </script>
 <style>
 .container {
-height: 720px;
+height: 618px;
 }
 img {
-  width: 100%; /* ทำให้ภาพขยายตามความกว้างของ div */
-  height: 100%; /* ทำให้ภาพขยายตามความสูงของ div */
+height: 618px;
 }
 </style>

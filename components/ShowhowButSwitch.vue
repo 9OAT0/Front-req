@@ -3,7 +3,7 @@
         <div class="bg-green-200">
         <img :src="image" alt="">
     </div>
-    <div class=" bg-ShowHowBG flex items-start flex-col justify-center p-8 md:p-16 h-[720px]">
+    <div class=" bg-ShowHowBG flex items-start flex-col justify-center p-8  pl- 8h-[720px]">
         <p class="text-5xl mb-0">{{text}}</p>
         <p class="text-xl mt-0">{{minitext}}</p>
         <button class="inline-block pt-3 pb-3 pl-3 pr-3
@@ -29,10 +29,9 @@ defineProps({
 </script>
 <style>
 .container {
- height: 720px;
+ height: 618px;
 }
 img {
-  width: 100%; /* ทำให้ภาพขยายตามความกว้างของ div */
-  height: 100%; /* ทำให้ภาพขยายตามความสูงของ div */
+
 }
 </style>
