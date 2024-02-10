@@ -7,7 +7,8 @@
         <p class="text-5xl mb-0">{{text}}</p>
         <p class="text-xl mt-0">{{minitext}}</p>
         <button class="inline-block pt-3 pb-3 pl-3 pr-3
-        bg-gray-50 uppercase rounded-md cursor-pointer mt-5">See More</button>
+        bg-gray-50 uppercase rounded-md cursor-pointer mt-5 border border-solid border-black transition-colors
+        hover:bg-notthesamegreen hover:text-white">See More</button>
     </div>
 </div>
 </template>
