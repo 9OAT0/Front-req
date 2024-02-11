@@ -1,5 +1,5 @@
 <template>
-    <div class="container bg-cover bg-center bg-opacity-70 bg-[url('public/368326570_339564101915523_5432385188415884411_n.jpg')]">
+    <div class="container bg-cover bg-center bg-opacity-70 bg-[url('/368326570_339564101915523_5432385188415884411_n.jpg')]">
         <div class="pl-[200px] pt-[150px]">
             <h2 class="text-white">Welcome to peedee coffee</h2>
             <div class="text-white text-5xl">Your everyday coffee</div>
@@ -19,7 +19,7 @@
             <button class="inline-block pt-3 pb-3 pl-5 pr-5
             rounded-md cursor-pointer mt-10 border border-solid border-white text-white
             hover:bg-gray-300 hover:text-black hover:bg-opacity-50 transition-all duration-500">
-            ขอมูลที่เราอยากให้คุณรู้
+            ข้อมูลที่เราอยากให้คุณรู้
             </button>
             </div>
         </div>          

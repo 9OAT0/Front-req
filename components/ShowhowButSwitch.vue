@@ -33,6 +33,6 @@ defineProps({
  height: 618px;
 }
 img {
-
+ height: 618px;
 }
 </style>
