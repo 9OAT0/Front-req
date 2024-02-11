@@ -23,10 +23,16 @@
     </div>
     <div class="bg-notthesamegreen h-40">
     </div>
-    <!DOCTYPE html>
-<html>
-<head>
-  <title>Personal Profile</title>
+    <div class="navbar flex justify-end">
+    <a href="#">Personal Profile</a>
+    <a href="#">Manage Address</a>
+    <a href="#">Change Password</a>
+    <a href="#">My Orders</a>
+    <a href="#">Favorites</a>
+  </div>
+    
+</template>
+
   <style>
     /* Add some basic styling */
     body {
@@ -71,47 +77,3 @@
       color: black;
     }
   </style>
-</head>
-<body>
-  <div class="navbar">
-    <a href="#">Personal Profile</a>
-    <a href="#">Manage Address</a>
-    <a href="#">Change Password</a>
-    <a href="#">My Orders</a>
-    <a href="#">Favorites</a>
-    <a href="#" style="float:right;">Logout</a>
-  </div>
-  <h1>Personal Profile</h1>
-  <ul>
-    <li>
-      <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" value="นาย สม แดง" readonly>
-    </li>
-    <li>
-      <label for="dateOfBirth">Date of Birth:</label>
-      <input type="text" id="dateOfBirth" value="05/12/2495" readonly>
-    </li>
-    <li>
-      <label for="username">Username:</label>
-      <input type="text" id="username" value="แดงกีต้าร์" readonly>
-    </li>
-    <li>
-      <label for="email">Email:</label>
-      <input type="email" id="email" value="you@example.com" readonly>
-    </li>
-    <li>
-      <label for="phoneNumber">Phone Number:</label>
-      <input type="text" id="phoneNumber" value="+66" readonly>
-    </li>
-  </ul>
-  <h2>Manage Address</h2>
-  <!-- Add form for managing address here -->
-  <h2>Change Password</h2>
-  <!-- Add form for changing password here -->
-  <h2>My Orders</h2>
-  <!-- Add list of orders here -->
-  <h2>Favorites</h2>
-  <!-- Add list of favorites here -->
-</body>
-</html>
-</template>
