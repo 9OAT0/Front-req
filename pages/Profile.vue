@@ -1,5 +1,5 @@
-<template> 
-    <div class="bg-NavBarBG flex justify-between align-middle p-4">
+<template>
+    <div class=" flex justify-between align-middle p-4">
         <div class="flex">
             <h1 class="pr-4 flex items-center">
                 perdee coffee
@@ -21,7 +21,7 @@
             </ul>
         </div>
     </div>
+    <div class="bg-notthesamegreen h-[170px] w-full">
+            
+    </div>
 </template>
-<script>
-
-</script>
