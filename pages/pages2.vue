@@ -55,25 +55,27 @@
     }
     input[type="submit"] {
       background-color: blue;
-      color: white;
+      color: rgb(255, 255, 255);
       padding: 5px 10px;
       border: none;
       cursor: pointer;
     }
     .navbar {
-      background-color: #333;
+      background-color: #ffffff;
       overflow: hidden;
     }
     .navbar a {
       float: left;
       display: block;
-      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
     }
     .navbar a:hover {
       background-color: #ddd;
-      color: black;
+      color: #6C8B5D;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
     }
   </style>
