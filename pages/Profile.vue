@@ -21,7 +21,6 @@
             </ul>
         </div>
     </div>
-    <div class="bg-notthesamegreen h-[170px] w-full">
-            
-    </div>
+    <sideber />
 </template>
+
