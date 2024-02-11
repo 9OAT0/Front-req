@@ -1,4 +1,5 @@
 <template>
+    <Header-comp />
     <Hero />
     <Showhow text = 'Eat.' minitext = 'Breakfast, Lunch and Artisanal Pastries' button = '/pages2' image = "/405965693_390960763442523_4800279484957644089_n.jpg"/>
     <MakeItLonger />
