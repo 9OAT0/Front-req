@@ -18,11 +18,11 @@
     <div class="items-end mt-10 mr-16">
 
         <div class="text-4xl font-bold">
-            <a href="">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=100075858083321">Facebook</a>
         </div>
         <br>
         <div class="text-4xl font-bold">
-            <a href=""> Instargram</a>
+            <a href="https://www.instagram.com/predee_coffee_roaster/"> Instargram</a>
         </div>
     </div>
 </div>

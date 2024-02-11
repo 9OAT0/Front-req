@@ -1,17 +1,19 @@
 <template>
-    <div class="p-72 border-b-[1px] border-solid 
-    bg-[url('https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/368326570_339564101915523_5432385188415884411_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHEKASU10iNlS7Y_kWeQleKDzIyY8Ui4yQPMjJjxSLjJBmeM2zcSI1wcD1Z3wZ2l4zsW6CaPQAVYjpeABZwI_3O&_nc_ohc=AsTVQ8GyqhYAX_l5UN0&_nc_ht=scontent.fbkk5-4.fna&oh=00_AfCAXR-8jEU6RKSVNetG-DHr-rpZyAXvnpoA8UKUoKCFcQ&oe=65C0413A')]
-    pointer-events-none bg-color-15">
-        <div class="text-white text-5xl">
-            <h2>Welcome to 47cafe</h2>
-			<p>Your go-to spot for delicious eats and coffee.</p>
+    <div class="container border-b-[1px] border-solid pointer-events-none bg-color-15">
+        <img src= "public/368326570_339564101915523_5432385188415884411_n.jpg" alt=""
+        class="h-[800px]">
+        <div class="absolute z-10 inset-x-48 inset-y-[220px]">
+            <h2 class="text-white">Welcome to peedee coffee</h2>
+            <div class="text-white text-5xl">Your everyday coffee</div>
+            <button class="inline-block pt-3 pb-3 pl-3 pr-3
+        bg-in uppercase rounded-md cursor-pointer mt-10 border border-solid border-white text-white transition-colors
+        hover:bg-gray-400 hover:text-black">เมนูของเรา
+        </button>
         </div>
     </div>
 </template>
 <style>
-.container{
-width: 900px;
-}
+
 img {
   width: 100%; /* ทำให้ภาพขยายตามความกว้างของ div */
   height: 100%; /* ทำให้ภาพขยายตามความสูงของ div */

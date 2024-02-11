@@ -30,6 +30,10 @@ defineProps({
     'button': {
         type: String,
         default: ''
+    },
+    'mt': {
+        type: String,
+        default: ''
     }}
 
 )
