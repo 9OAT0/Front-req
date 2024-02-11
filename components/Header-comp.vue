@@ -14,7 +14,7 @@
         <div class="flex items-center">
             <ul class="list-none m-0 p-0 gap-4">
                 <li class="inline mr-4"><a href="#home" class=" decoration-gray-50">Home</a></li>
-                <li class="inline mr-4"><a href="#menu" class=" decoration-gray-50">Our Menu</a></li>
+                <li class="inline mr-4"><a href="store" class=" decoration-gray-50">Our Menu</a></li>
                 <li class="inline mr-4"><a href="#about" class=" decoration-gray-50">This Is Us</a></li>
                 <li class="inline mr-4"><a href="#contact" class=" decoration-gray-50">Contact Us</a></li>
                 <li class="inline mr-4"><a href="pages2" class=" decoration-gray-50">Log In</a></li>

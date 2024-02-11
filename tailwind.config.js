@@ -6,7 +6,8 @@ export default {
       colors: {
         notthesamegreen: "#7F9E71",
         NavBarBG : "#CDB992",
-        ShowHowBG : "#FCFCDD"
+        ShowHowBG : "#FCFCDD",
+        CartBG : "#58790C"
       }
     },
   },

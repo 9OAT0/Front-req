@@ -1,5 +1,5 @@
 <template>
-    <div class="container bg-cover bg-center bg-opacity-70 bg-[url('public/368326570_339564101915523_5432385188415884411_n.jpg')]">
+    <div class="container bg-cover bg-center bg-opacity-70 bg-[url('/368326570_339564101915523_5432385188415884411_n.jpg')]">
         <div class="pl-[200px] pt-[150px]">
             <h2 class="text-white">Welcome to peedee coffee</h2>
             <div class="text-white text-5xl">Your everyday coffee</div>
