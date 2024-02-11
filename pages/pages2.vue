@@ -23,6 +23,10 @@
     </div>
     <div class="bg-notthesamegreen h-40">
     </div>
+    <div class="w-[220px] h-10 absolute z-10 inset-x-36 inset-y-32 rounded-full object-cover">
+    <img src="public/แดง.jpg" class="rounded-full">
+    </div>
+
     <div class="navbar flex justify-end">
     <a href="#">Personal Profile</a>
     <a href="#">Manage Address</a>
@@ -30,7 +34,14 @@
     <a href="#">My Orders</a>
     <a href="#">Favorites</a>
   </div>
-    
+<div>
+    <h1 class="absolute inset-x-96 inset-y-60 w-36 h-14">
+        Username
+    </h1>
+    <h2 class="absolute inset-x-96 inset-y-62 w-36 h-14">
+         แดงกีต้าร์
+    </h2>
+</div>
 </template>
 
   <style>
@@ -39,7 +50,7 @@
       font-family: Arial, sans-serif;
     }
     h1 {
-      text-align: center;
+      text-align: ;
     }
     ul {
       list-style: none;
@@ -78,4 +89,12 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 300ms;
     }
+    h1{
+        font-size: 24px;
+        color: #D9D9D9;
+    }
+    h2 {
+        font-size: 20px;
+    }
   </style>
+  
