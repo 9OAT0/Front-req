@@ -13,11 +13,11 @@
         </div>
         <div class="flex items-center">
             <ul class="list-none m-0 p-0 gap-4">
-                <li class="inline mr-4"><a href="#home" class=" decoration-gray-50">Home</a></li>
-                <li class="inline mr-4"><a href="#menu" class=" decoration-gray-50">Our Menu</a></li>
-                <li class="inline mr-4"><a href="#about" class=" decoration-gray-50">This Is Us</a></li>
-                <li class="inline mr-4"><a href="#contact" class=" decoration-gray-50">Contact Us</a></li>
-                <li class="inline mr-4"><a href="/Profile" class=" decoration-gray-50">Log In</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#home" class=" decoration-gray-50">Home</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#menu" class=" decoration-gray-50">Our Menu</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#about" class=" decoration-gray-50">This Is Us</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#contact" class=" decoration-gray-50">Contact Us</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="/Profile" class=" decoration-gray-50">Log In</a></li>
             </ul>
         </div>
     </div>
