@@ -41,9 +41,16 @@
     <h2 class="absolute inset-x-96 inset-y-62 w-36 h-14">
          แดงกีต้าร์
     </h2>
-</div>
-</template>
+    <h3 class="absolute inset-x-6 inset-y-80 w-60 h-14">
+         Personal
+    </h3>
+    <h4 class="absolute inset-x-60 inset-y-80 w-99 h-14">
+      address
+    </h4>
+  </div>
 
+</template>
+  
   <style>
     /* Add some basic styling */
     body {
@@ -95,6 +102,16 @@
     }
     h2 {
         font-size: 20px;
+    }
+    h3 {
+      font-size: 17px;
+      color: #D9D9D9;
+      padding: 55px;
+    }
+    h4 {
+      font-size: 17px;
+      color: #D9D9D9;
+      padding: 55px;
     }
   </style>
   
