@@ -24,7 +24,7 @@
     <div class="bg-notthesamegreen h-40">
     </div>
     <div class="w-[220px] h-10 absolute z-10 inset-x-36 inset-y-32 rounded-full object-cover">
-    <img src="public/แดง.jpg" class="rounded-full">
+    <img src="/แดง.jpg" class="rounded-full">
     </div>
 
     <div class="navbar flex justify-end">
@@ -50,7 +50,7 @@
       font-family: Arial, sans-serif;
     }
     h1 {
-      text-align: ;
+      
     }
     ul {
       list-style: none;

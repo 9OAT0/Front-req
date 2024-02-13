@@ -1,38 +1,46 @@
 <template>
-<div class="grid grid-cols-2">
-        <div class="bg-green-200">
-        <img :src="image" alt="">
+  <div class="grid grid-cols-2 bg-[url(/bg-aica.jpg)]">
+    <div class="container bg-[ulr('/bg-aica.jpg')]
+    flex items-start flex-col justify-center pl-8 pr-8 p-16">
+        <div class="bg-white h-full w-full rounded-3xl bg-[ulr('/latte-art-1.webp')]">
+        <img src="/latte-art-1.webp" alt="" class="h-full w-full rounded-3xl">
+        </div>
     </div>
-    <div class=" bg-ShowHowBG flex items-start flex-col justify-center p-8  pl- 8h-[720px]">
-        <p class="text-5xl mb-0">{{text}}</p>
-        <p class="text-xl mt-0">{{minitext}}</p>
-        <button class="inline-block pt-3 pb-3 pl-3 pr-3
-        bg-gray-50 uppercase rounded-md cursor-pointer mt-5 border border-solid border-black transition-all duration-500
-        hover:bg-notthesamegreen hover:text-white">See More</button>
+    <div>
+      svbhj
     </div>
-</div>
+    </div>
 </template>
 <script setup>
+import { defineProps } from 'vue';
+
 defineProps({
-    'text':{
-        type: String,
-        defualt : 'Text'
-    },
-    'minitext':{
-        type: String,
-        defualt : 'Text'
-    },
-    'image' :{
-        type:String,
-        defualt : ''
-    }
-})
+  text: {
+    type: String,
+    default: 'Text'
+  },
+  minitext: {
+    type: String,
+    default: 'Text'
+  },
+  image: {
+    type: String,
+    default: ''
+  }
+});
 </script>
-<style>
-.container {
- height: 618px;
+
+<style scoped>
+.img-container {
+  height: 100%;
 }
-img {
- height: 618px;
+
+.bg-green-200 {
+  height: 100%;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
 }
 </style>
