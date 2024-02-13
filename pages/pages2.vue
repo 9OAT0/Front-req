@@ -112,6 +112,7 @@
       font-size: 17px;
       color: #D9D9D9;
       padding: 55px;
+      text-align: center;
     }
   </style>
   
