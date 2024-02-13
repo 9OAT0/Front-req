@@ -1,7 +1,7 @@
 <template>
     <div class="w-[280px] h-[400px] m-[8px]">
         <div class="">
-            <img src="public/Blend.jpg" class="w-[280px] h-[262px]">
+            <img src="/Blend.jpg" class="w-[280px] h-[262px]">
         </div>
         <div class="text-[20px] ">
             Hillkoff : เมล็ดกาแฟคั่ว แม่มอญ เชียงราย ตราฮิลล์คอฟฟ์ 250g

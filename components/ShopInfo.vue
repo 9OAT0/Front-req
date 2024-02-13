@@ -1,6 +1,6 @@
 <template>
 <div class="bg-ShowHowBG border-solid border-2 border-black">
-    <h1 class="flex justify-center text-4xl mb-20 mt-4">Talk to Us</h1>
+    <h1 class="flex justify-center text-4xl mb-20 mt-4 text-black">Talk to Us</h1>
     <div class="flex justify-center text-xl mb-5 mt-5">
         <div class="">
             <div class="text-center mr-10 mb-10">
