@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-NavBarBG flex justify-between align-middle p-4">
+  <div class="bg-NavBarBG flex justify-between align-middle p-4 pl-8 pr-8">
     <div class="flex justify-between">
-      <h1 class="pr-4 flex items-center">
-        <a href="#home"> perdee coffee </a>
+      <h1 class="pr-4 flex items-center ">
+        <i class="fa-solid fa-bars items-end pr-4" @click="toggleSlideBar"></i>
+        <a href="#home" class="text-xl"> Perdee coffee </a>
       </h1>
       <div class="flex w-max items-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black">
         <input type="search" placeholder="ค้นหา" class="bg-transparent pl-2 focus:outline-none placeholder:text-black">
         <span class="pr-2 flex items-center justify-end">
-          <i class="fa-solid fa-bars items-end" @click="toggleSlideBar"></i> <!-- Add a click event handler -->
         </span>
       </div>
     </div>
