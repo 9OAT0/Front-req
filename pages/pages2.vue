@@ -47,6 +47,9 @@
     <h4 class="absolute inset-x-60 inset-y-80 w-99 h-14">
       address
     </h4>
+    <h5 class="absolute inset-x-32 inset-y-47 w-159 h-32">
+      Frist name
+    </h5>
   </div>
 
 </template>
@@ -105,14 +108,18 @@
     }
     h3 {
       font-size: 17px;
-      color: #D9D9D9;
+      color: #000000;
       padding: 55px;
     }
     h4 {
       font-size: 17px;
-      color: #D9D9D9;
+      color: #000000;
       padding: 55px;
       text-align: center;
+
+    }
+    h5 {
+      
     }
   </style>
   
