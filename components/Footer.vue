@@ -1,5 +1,5 @@
 <template>
-<div  class="bg-notthesamegreen flex justify-between text-white">
+<div  class="flex justify-between bg-NavBarBG bg-opacity-60">
     <div class="item-start mt-10 ml-16 mb-16">
         <div class="text-xl font-bold">
             Talk to us

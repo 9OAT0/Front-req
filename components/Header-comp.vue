@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-NavBarBG flex justify-between align-middle p-4 pl-8 pr-8">
+  <div class="bg-NavBarBG flex justify-between align-middle p-4 pl-[45px] pr-8">
     <div class="flex justify-between">
-      <h1 class="pr-4 flex items-center ">
+      <h1 class="pr-4 flex items-center text-black">
         <i class="fa-solid fa-bars items-end pr-4" @click="toggleSlideBar"></i>
-        <a href="#home" class="text-xl"> Perdee coffee </a>
+        <a href="/" class="text-xl"> Perdee coffee </a>
       </h1>
       <div class="flex w-max items-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black">
         <input type="search" placeholder="ค้นหา" class="bg-transparent pl-2 focus:outline-none placeholder:text-black">
@@ -37,21 +37,19 @@ export default {
       document.body.classList.remove('no-scroll')
     },
     handleClickOutside(event) {
-      const slideBar = this.$refs.slideBar; // Reference to SlideBar component
+      const slideBar = this.$refs.slideBar; 
       if (this.isSlideBarOpen && !slideBar.contains(event.target)) {
         this.closeSlideBar();
       }
     }
   },
   beforeDestroy() {
-    // Remove event listener before component is destroyed
     document.removeEventListener('click', this.handleClickOutside);
   }
 }
 </script>
 
 <style scoped>
-/* ไม่ควรเปลี่ยนชื่อคลาสจาก 'slide-bar' เป็นชื่ออื่น เนื่องจาก SlideBar ใช้ชื่อ 'SlideBar' */
 .slide-bar {
   transition: transform 0.3s ease-in-out;
 }
