@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-[url('/bg-aica.jpg')] h-[618px]">
-    <div class="text-white text-2xl pl-[50px] pt-[59px]">
+  <div class="h-[618px]">
+    <div class="text-2xl pl-[50px] pt-[60px]">
       บทความเกี่ยวกับกาแฟ
     </div>
     <div class="justify-center flex-col scrollable-container01 mt-8 ml-20">
-      <div class="-mt-8">
+      <div class="mt-8">
         <Botqarm
           text="จุดเริ่มต้นของ Latte Art ศิลปะการวาดบนกาแฟที่น่าหลงใหล"
           minitext="Latte Art หรือการแต่งหน้าฟองนมบนแก้วกาแฟ มีจุดเริ่มต้นมาจากเมืองซีแอตเทิล ประเทศสหรัฐอเมริกา จากร้านกาแฟ Espresso Vivace ของเดวิด โชเมอร์ ( David Schomer ) ผู้ที่มีความสนใจด้านงานศิลปะและพยายามหาจุดแตกต่างให้กาแฟที่เขาขาย จึงพยายามคิดค้นกาแฟที่ดีที่สุด"
