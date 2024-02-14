@@ -10,6 +10,7 @@
   <ul class="list-none m-0 p-0">
     <li class="mb-2"><a href="#home" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Home</a></li>
     <li class="mb-2"><a href="store" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Product</a></li>
+    <li class="mb-2"><a href="store" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Bookmark</a></li>
     <li class="mb-2"><a href="#about" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">This Is Us</a></li>
     <li class="mb-2"><a href="#contact" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Contact Us</a></li>
     <li class="mb-2"><a href="pages2" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Log In</a></li>
