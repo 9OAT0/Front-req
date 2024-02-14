@@ -37,21 +37,19 @@ export default {
       document.body.classList.remove('no-scroll')
     },
     handleClickOutside(event) {
-      const slideBar = this.$refs.slideBar; // Reference to SlideBar component
+      const slideBar = this.$refs.slideBar; 
       if (this.isSlideBarOpen && !slideBar.contains(event.target)) {
         this.closeSlideBar();
       }
     }
   },
   beforeDestroy() {
-    // Remove event listener before component is destroyed
     document.removeEventListener('click', this.handleClickOutside);
   }
 }
 </script>
 
 <style scoped>
-/* ไม่ควรเปลี่ยนชื่อคลาสจาก 'slide-bar' เป็นชื่ออื่น เนื่องจาก SlideBar ใช้ชื่อ 'SlideBar' */
 .slide-bar {
   transition: transform 0.3s ease-in-out;
 }

@@ -1,7 +1,13 @@
 <template>
-  <div class="bg-[url('/bg-aica.jpg')] h-[700px]">
+  <div class="bg-[url('/bg-aica.jpg')] h-[800px]">
     <div class="text-white text-2xl pl-[50px] pt-[59px]">
       สินค้าของเรา
+      <div class="mt-4 ">
+        เมล็ดกาแฟ
+      <div class="text-sm mr-32 ml-8 mt-4">
+        Coffee Press ได้คัดเลือกเมล็ดกาแฟ อราปิก้า 100% จากแหล่งดอยช้าง จังหวัดเชียงราย ที่มีชื่อเสียงในด้านเมล็ดกาแฟระดับโลก โดยเริ่มตั้งแต่เลือกฟาร์มที่มีคุณภาพดี ไม่ใช้ยาฆ่าแมลง คัดเลือกเมล็ดอย่างพิถีพิถัน แล้วนำคั่วด้วยสูตรเฉพาะของ Coffee Press ทำให้กาแฟเข้มข้นหอมกรุ่น ตามเอกลักษณ์กาแฟไทยชั้นดี
+      </div>
+      </div>
     </div>
     <div class="flex scrollable-container mt-8 ml-20">
       <ShowProduct />
@@ -25,7 +31,6 @@ export default {
 
 <style>
 .scrollable-container {
-  height: 1000px;
   width: 1400px;
   overflow-x: auto; /* เพิ่มการเลื่อนแนวนอนเมื่อเนื้อหามีมากเกินไป */
   overflow-y: hidden;
