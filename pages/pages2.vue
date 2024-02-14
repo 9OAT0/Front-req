@@ -13,11 +13,11 @@
         </div>
         <div class="flex items-center">
             <ul class="list-none m-0 p-0 gap-4">
-                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#home" class=" decoration-gray-50">Home</a></li>
-                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#menu" class=" decoration-gray-50">Our Menu</a></li>
-                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#about" class=" decoration-gray-50">This Is Us</a></li>
-                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#contact" class=" decoration-gray-50">Contact Us</a></li>
-                <li class="inline mr-4 transition-all duration-300 hover:bg-gray-500 hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="/Profile" class=" decoration-gray-50">Log In</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-notthesamegreen hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#home" class=" decoration-gray-50">Home</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-notthesamegreen hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#menu" class=" decoration-gray-50">Our Menu</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-notthesamegreen hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#about" class=" decoration-gray-50">This Is Us</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-notthesamegreen hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="#contact" class=" decoration-gray-50">Contact Us</a></li>
+                <li class="inline mr-4 transition-all duration-300 hover:bg-notthesamegreen hover:border-b hover:border-black pt-4 pb-4 pl-4 pr-4 hover:bg-opacity-20"><a href="/Profile" class=" decoration-gray-50">Log In</a></li>
             </ul>
         </div>
     </div>
@@ -41,13 +41,13 @@
     <h2 class="absolute inset-x-96 inset-y-62 w-36 h-14">
          แดงกีต้าร์
     </h2>
-    <h3 class="absolute inset-x-6 inset-y-80 w-60 h-14">
+    <h3 class="absolute inset-x-10 inset-y-80 w-10 h-10">
          Personal
     </h3>
     <h4 class="absolute inset-x-60 inset-y-80 w-99 h-14">
       address
     </h4>
-    <h5 class="absolute inset-x-32 inset-y-47 w-159 h-32">
+    <h5 class="absolute inset-x-9 inset-y-30">
       Frist name
     </h5>
   </div>
@@ -110,6 +110,8 @@
       font-size: 17px;
       color: #000000;
       padding: 55px;
+      
+      
     }
     h4 {
       font-size: 17px;
@@ -119,7 +121,10 @@
 
     }
     h5 {
-      
+      font: 17px;
+      color: #000000;
+      padding: 120px;
+      text-align:l;
     }
   </style>
   
