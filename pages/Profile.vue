@@ -21,6 +21,6 @@
             </ul>
         </div>
     </div>
-    <div class="bg-notthesamegreen h-40">
+    <div class="bg h-40">
     </div>
 </template>

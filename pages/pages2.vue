@@ -21,12 +21,13 @@
             </ul>
         </div>
     </div>
+    <div>
     <div class="bg-notthesamegreen h-40">
     </div>
     <div class="w-[220px] h-10 absolute z-10 inset-x-36 inset-y-32 rounded-full object-cover">
     <img src="/แดง.jpg" class="rounded-full">
     </div>
-
+    </div>
     <div class="navbar flex justify-end">
     <a href="#">Personal Profile</a>
     <a href="#">Manage Address</a>
@@ -34,24 +35,12 @@
     <a href="#">My Orders</a>
     <a href="#">Favorites</a>
   </div>
-<div>
-    <h1 class="absolute inset-x-96 inset-y-60 w-36 h-14">
-        Username
-    </h1>
-    <h2 class="absolute inset-x-96 inset-y-62 w-36 h-14">
-         แดงกีต้าร์
-    </h2>
-    <h3 class="absolute inset-x-10 inset-y-80 w-10 h-10">
-         Personal
-    </h3>
-    <h4 class="absolute inset-x-60 inset-y-80 w-99 h-14">
-      address
-    </h4>
-    <h5 class="absolute inset-x-9 inset-y-30">
-      Frist name
-    </h5>
-  </div>
 
+<div>
+  <div class="pt-[100px]">
+      name
+    </div>
+</div>
 </template>
   
   <style>
@@ -110,7 +99,7 @@
       font-size: 17px;
       color: #000000;
       padding: 55px;
-      
+      border: black 2px;
       
     }
     h4 {
@@ -124,7 +113,8 @@
       font: 17px;
       color: #000000;
       padding: 120px;
-      text-align:l;
+      
     }
+    
   </style>
   
