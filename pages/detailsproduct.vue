@@ -1,7 +1,14 @@
 <template>
     <Header-comp />
-    <div class="flex justify-center">
+    <div class="รายละเอียดสินค้า">
         <productpicture />
     </div>
     
 </template>
+<style>
+.รายละเอียดสินค้า {
+    display: flex;
+    justify-content: center;
+}
+
+</style>
