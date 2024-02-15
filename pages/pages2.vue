@@ -64,13 +64,17 @@
   <div class="container mx-auto h-full flex item-center gap-4">
     <div class="w-1/3 flex flex-col justify-center items-center">
       <div class="container mx-2 my-20">
-        <div class="box mx-10 text-gray-400">
+        <div class="box mx-10 text-gray-400 text-xl">
           <label for="tel">Frits Name</label>
-          <input type="text"id="tel" class="text-black border border-gray-300 rounded-lg w-[250px]">
-          <div class="container mx- my-">
-          <div class="text-gray-400 text-xl">
-            <label for="tel"> Deth of brith</label>
-            <input type="text"id="tel" class="text-black border border-gray-300 rounded-lg w-[250px]">
+          <input type="text"id="tel" class="text-black border border-gray-300 rounded-lg w-[250px] h-35 ">
+          <div class="container mx-30 my-25">
+          <div class="text-black-400 text-xl">
+             Deth of brith 
+            <form action="">
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" class="text-notthesamegreen" name="birthday">
+             
+            </form>
             </div>
           </div>
         </div>
