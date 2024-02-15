@@ -1,7 +1,7 @@
 <template>
     <a href="mycart">
         <div class="addbutton">
-            <i class="fa-solid fa-cart-shopping mr-4"></i>
+            <i class="fa-solid fa-cart-shopping "></i>
             สั่งซื้อสินค้า
         </div>
     </a>

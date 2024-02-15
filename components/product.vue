@@ -10,7 +10,7 @@
             ฿145
         </div>
         <div class="flex justify-center">
-        <a href="detailsproduct">
+        <a href="Productdetail">
             <div class="bg-CartBG w-[160px] h-[50px] flex items-center justify-center rounded-lg text-[20px] text-white piot cursor-pointer">
                 <i class="fa-solid fa-cart-shopping mr-4"></i>
             สั่งซื้อสินค้า
@@ -22,10 +22,11 @@
 </template>
 <style>
 .ช่องชื่อสินค้า {
-    background: #fae6e6;
-    height: 25px;
+    height: 44px;
     width: 280px;
     font-size: 20px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 </style>
