@@ -3,8 +3,7 @@
       <div class="flex">
         <h1 class="pr-4 flex items-center">perdee coffee</h1>
         <div
-          class="flex w-max items-center rounded-[28px] p-[8px] bg-transparent"
-        >
+          class="flex w-max items-center rounded-[28px] p-[8px] bg-transparent">
           <span class="pr-2">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
@@ -54,13 +53,58 @@
       </div>
     </div>
     <div class="navbar flex justify-end">
-      <a href="-">Personal Profile</a>
-      <a href="pages3">Manage Address</a>
+      <a href="#">Personal Profile</a>
+      <a href="#">Manage Address</a>
       <a href="#">Change Password</a>
       <a href="#">My Orders</a>
       <a href="#">Favorites</a>
     </div>
+    <div class="text-left mx-96">
+     usename
+    </div>
+    <div class="text-left mx-52 my-16 border border-gray-300 rounded h-[400px] w-[1000px] ">
+      ที่อยู่หลัก
+      <form>
+      <label for="tel ">Frits Name</label>
+      <input type="text" id ="tel" class="text-black border border-gray-300 rounded-xl w-[100px] h-10">
+      </form>
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 </template>
+<style>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
   
 
     

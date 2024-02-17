@@ -55,9 +55,9 @@
   </div>
   <div class="navbar flex justify-end">
     <a href="#">Personal Profile</a>
-    <a href="pages3">Manage Address</a>
+    <a href="Address">Manage Address</a>
     <a href="#">Change Password</a>
-    <a href="#">My Orders</a>
+    <a href="My Orders">My Orders</a>
     <a href="Favorites">Favorites</a>
   </div>
   <div class="">
@@ -73,7 +73,7 @@
             <form action="">
               <label for="birthday">Birthday:</label>
               <input type="date" id="birthday" class="text-notthesamegreen" name="birthday">
-             
+              <input type="submit">
             </form>
             </div>
           </div>
@@ -117,11 +117,12 @@ input[type="password"] {
   margin-bottom: 10px;
 }
 input[type="submit"] {
-  background-color: blue;
-  color: rgb(255, 255, 255);
+  background-color: rgb(4, 4, 4);
+  color:#6c8b5d(97, 179, 26);
   padding: 5px 10px;
-  border: none;
+  border:  ;
   cursor: pointer;
+  
 }
 .navbar {
   background-color: #ffffff;

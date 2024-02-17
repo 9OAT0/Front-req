@@ -57,7 +57,10 @@
     <a href="#">Personal Profile</a>
     <a href="Address">Manage Address</a>
     <a href="#">Change Password</a>
-    <a href="#">My Orders</a>
+    <a href="My Orders">My Orders</a>
     <a href="Favorites">Favorites</a>
+  </div>
+  <div class="text-center my-40">
+    ที่กดชอบไว้อะ
   </div>
 </template>
