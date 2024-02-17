@@ -55,10 +55,10 @@
   </div>
   <div class="navbar flex justify-end">
     <a href="#">Personal Profile</a>
-    <a href="#">Manage Address</a>
+    <a href="pages3">Manage Address</a>
     <a href="#">Change Password</a>
     <a href="#">My Orders</a>
-    <a href="#">Favorites</a>
+    <a href="Favorites">Favorites</a>
   </div>
   <div class="">
   <div class="container mx-auto h-full flex item-center gap-4">
@@ -66,7 +66,7 @@
       <div class="container mx-2 my-20">
         <div class="box mx-10 text-gray-400 text-xl">
           <label for="tel">Frits Name</label>
-          <input type="text"id="tel" class="text-black border border-gray-300 rounded-lg w-[250px] h-35 ">
+          <input type="text" id ="tel" class="text-black border border-gray-300 rounded-lg w-[250px] h-35 ">
           <div class="container mx-30 my-25">
           <div class="text-black-400 text-xl">
              Deth of brith 
