@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-NavBarBG flex justify-between align-middle p-4 pl-[45px] pr-8">
+  <div class="bg-NavBarBG flex justify-between align-middle p-4 pl-[45px] pr-8 fixed w-full">
     <div class="flex justify-between">
       <h1 class="pr-4 flex items-center text-black">
         <i class="fa-solid fa-bars items-end pr-4" @click="toggleSlideBar"></i>

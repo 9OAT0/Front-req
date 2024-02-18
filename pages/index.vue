@@ -33,5 +33,6 @@
     <ShowhowBotqarm />
     <ShowhowProduct />
     <Footer />
+    <store />
   </div>
 </template>
