@@ -3,7 +3,7 @@
     <Header-comp />
     <Hero />
         <div class="bg-white ml-[40px] mr-[40px] pb-[70px]">
-      <div class="flex justify-center items-center -mt-[40px]">
+      <div class="flex justify-center items-center -mt-[80px]">
         <div class="pl-[40px] pr-[40px] pt-[75px] ml-[40px] mr[40px] pb-8 w-[670px]">
           <div class="text-center">
             <h2 class="pb-[20px] text-2xl font-bold">“Coffee ที่เสิร์ฟคู่ Story”</h2>

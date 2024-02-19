@@ -36,13 +36,16 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
+import { ref, onMounted } from 'vue';
+import db from './database';
+
 
 export default {
   setup() {
     const bookmarks = ref([]);
 
     const newBookmarks = [
+      // ข้อมูลบุ๊คมาร์คใหม่ที่ต้องการบันทึก
       {
         text: "เรื่องราวของ Espresso และเครื่องทำกาแฟ จุดเริ่มต้นของกาแฟสมัยใหม่",
         minitext:
@@ -57,64 +60,48 @@ export default {
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2020/08/Specialty-Coffee-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%88%E0%B8%B6%E0%B8%87%E0%B8%AE%E0%B8%B4%E0%B8%95%E0%B8%AB%E0%B8%B2%E0%B8%97%E0%B8%B3-1-1.jpg",
       },
+      {
+        text: "เจาะลึกกาแฟคั่วเข้มที่ครองใจคนไทยมาอย่างช้านาน",
+        minitext:
+          "กาแฟคั่วเข้มนั้นได้รับความนิยมในหมู่ผู้ที่ชื่นชอบกาแฟด้วยรสชาติที่เข้มข้นและมีกลิ่นที่ชัดเจนและมีลักษณะเฉพาะที่แตกต่างจากการคั่วกาแฟระดับอื่น แต่สิ่งที่ทำให้แตกต่างจากกาแฟประเภทอื่นๆ ",
+        image:
+          "https://coffeepressthailand.com/wp-content/uploads/2023/06/%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B8%84%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1.jpg",
+      },
+      {
+        text: "จุดเริ่มต้นของ Latte Art ศิลปะการวาดบนกาแฟที่น่าหลงใหล",
+        minitext:
+          "Latte Art หรือการแต่งหน้าฟองนมบนแก้วกาแฟ มีจุดเริ่มต้นมาจากเมืองซีแอตเทิล ประเทศสหรัฐอเมริกา จากร้านกาแฟ Espresso Vivace ของเดวิด โชเมอร์ ( David Schomer ) ผู้ที่มีความสนใจด้านงานศิลปะและพยายามหาจุดแตกต่างให้กาแฟที่เขาขาย จึงพยายามคิดค้นกาแฟที่ดีที่สุด เพื่อทำให้ผู้ดื่มประทับใจ เดวิดเป็นหนึ่งในผู้คิดค้นและทำให้ลาเต้อาร์ตได้รับความนิยมในช่วงทศวรรษ 1990 จนถึงปัจจุบัน ",
+        image:
+          "https://coffeepressthailand.com/wp-content/uploads/2020/08/%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87-Latte-Art-1.jpg",
+      },
       // เพิ่มบุ๊คมาร์คเพิ่มเติมตามต้องการ
     ];
 
-    const saveBookmarks = (newBookmarks) => {
-      newBookmarks.forEach((bookmark) => {
-        const numBookmarks = localStorage.getItem("numBookmarks") || 0;
-        const num = Number(numBookmarks) + 1;
-        localStorage.setItem("bookmark" + num, JSON.stringify(bookmark));
-        localStorage.setItem("numBookmarks", num);
-      });
+    const saveBookmarks = async (newBookmarks) => {
+      await db.bookmarks.bulkAdd(newBookmarks);
     };
 
     const saveBookmark = (id, bookmarkData) => {
-      localStorage.setItem("bookmarked" + id, JSON.stringify(bookmarkData));
-      alert("บุ๊คมาร์คถูกเพิ่มแล้ว!");
+  const numBookmarks = localStorage.getItem('numBookmarks') || 0;
+  const num = Number(numBookmarks) + 1;
+  localStorage.setItem('bookmark' + num, JSON.stringify(bookmarkData));
+  localStorage.setItem('numBookmarks', num);
+  alert('บุ๊คมาร์คถูกเพิ่มแล้ว!');
+};
+
+    const removeBookmark = async (id) => {
+      await db.bookmarks.delete(id);
+      alert('ลบบุ๊คมาร์คเรียบร้อยแล้ว!');
       fetchBookmarks();
     };
 
-    const removeBookmark = (id) => {
-      localStorage.removeItem("bookmark" + id);
-      alert("ลบบุ๊คมาร์คเรียบร้อยแล้ว!");
-      fetchBookmarks();
+    const fetchBookmarks = async () => {
+      bookmarks.value = await db.bookmarks.toArray();
     };
 
-    const delBookmarkLocalStorage = () => {
-      let num = 1;
-      localStorage.removeItem("numBookmarks");
-      while (true) {
-        const key = "bookmark" + num;
-        if (localStorage.getItem(key)) {
-          localStorage.removeItem(key);
-          num++;
-        } else {
-          break;
-        }
-      }
-    };
-
-    const fetchBookmarks = () => {
-      let num = 1;
-      const fetchedBookmarks = [];
-
-      while (true) {
-        const savedBookmark = localStorage.getItem("bookmark" + num);
-        if (!savedBookmark) break;
-
-        const bookmarkData = JSON.parse(savedBookmark);
-        bookmarkData.id = num;
-        fetchedBookmarks.push(bookmarkData);
-        num++;
-      }
-
-      bookmarks.value = fetchedBookmarks;
-    };
-
-    onMounted(() => {
-      delBookmarkLocalStorage();
-      saveBookmarks(newBookmarks);
+    onMounted(async () => {
+      await db.bookmarks.clear(); // ลบข้อมูลที่เก่าออกก่อน
+      await saveBookmarks(newBookmarks);
       fetchBookmarks();
     });
 
