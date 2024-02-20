@@ -16,15 +16,23 @@
               class="h-[150px] pr-[28px] justify-center items-center"
             />
             <div class="mr-4">
-              <div>{{ bookmark.text }}</div>
+              <div><a :href="bookmark.Link"> {{ bookmark.text }} </a></div>
               <br />
               <div>{{ bookmark.minitext }}</div>
             </div>
             <div class="flex mt-0 text-xl">
-              <button @click="saveBookmark(bookmark.id, bookmark)" class="mr-4">
+              <button
+                v-if="!bookmark.saved"
+                @click="saveBookmark(bookmark.id, bookmark)"
+                class="mr-4"
+              >
                 <i class="fa-regular fa-bookmark"></i>
               </button>
-              <button @click="removeBookmark(bookmark.id)" class="mr-4">
+              <button
+                v-else
+                @click="removeBookmark(bookmark.id)"
+                class="mr-4"
+              >
                 <i class="fa-solid fa-share-nodes"></i>
               </button>
             </div>
@@ -52,6 +60,8 @@ export default {
           "ถ้าพูดถึง Espresso (เอสเพรสโซ่) คือน้ำสีเข้มๆ ที่ถูกสกัดมาจากเครื่องกาแฟ ไม่ว่าจะเป็นเครื่องทำกาแฟอัตโนมัติ หรือเครื่องทำกาแฟเอสเพรสโซ่ราคาหลายแสน (ถูกต้องครับ เครื่องทำกาแฟใหญ่ๆ ที่อยู่ในร้านกาแฟทั้งหลายบางเครื่องซื้อรถป้ายแดงบางยี่ห้อได้สบายๆ เลยครับ)  ร้านกาแฟยอมลงทุนหลายแสนให้กับเครื่องทำกาแฟเพื่อจุดประสงค์หลักคือ ทำให้เอสเพรสโซ่รสชาติดีที่สุด",
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2020/05/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%82%E0%B8%AD%E0%B8%87-Espresso-%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F-%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1.jpg",
+        Link:
+          "Botqarm1"
       },
       {
         text: "Specialty Coffee คืออะไร? ทำไมกาแฟไทยจึงฮิตหาทำ !",
@@ -82,18 +92,45 @@ export default {
     };
 
     const saveBookmark = (id, bookmarkData) => {
-  const numBookmarks = localStorage.getItem('numBookmarks') || 0;
-  const num = Number(numBookmarks) + 1;
-  localStorage.setItem('bookmark' + num, JSON.stringify(bookmarkData));
-  localStorage.setItem('numBookmarks', num);
-  alert('บุ๊คมาร์คถูกเพิ่มแล้ว!');
+  // เช็คว่าบุ๊คมาร์คที่ต้องการบันทึกมีอยู่ใน localStorage หรือไม่
+  const existingBookmark = localStorage.getItem('bookmark' + (id - 10));
+  console.log(existingBookmark)
+  
+  if (!existingBookmark) {
+    // หากบุ๊คมาร์คยังไม่มีใน localStorage จึงทำการเพิ่ม
+    const numBookmarks = localStorage.getItem('numBookmarks') || 0;
+    const num = Number(numBookmarks) + 1;
+    localStorage.setItem('bookmark' + num, JSON.stringify(bookmarkData));
+    localStorage.setItem('numBookmarks', num);
+    alert('บุ๊คมาร์คถูกเพิ่มแล้ว!');
+  } else {
+    // หากบุ๊คมาร์คมีอยู่แล้วใน localStorage แจ้งเตือนว่ามีอยู่แล้ว
+    alert('บุ๊คมาร์คนี้มีอยู่แล้วในรายการ!');
+  }
 };
 
-    const removeBookmark = async (id) => {
-      await db.bookmarks.delete(id);
-      alert('ลบบุ๊คมาร์คเรียบร้อยแล้ว!');
-      fetchBookmarks();
-    };
+
+// ฟังก์ชันสำหรับลบบุ๊คมาร์ค
+const removeBookmark = (id) => {
+  const index = loadedBookmarks.value.findIndex((bookmark) => bookmark.id === id);
+  if (index !== -1) {
+    loadedBookmarks.value.splice(index, 1); // ลบบุ๊คมาร์คออกจากอาร์เรย์ loadedBookmarks
+    localStorage.removeItem("bookmark" + id); // ลบบุ๊คมาร์คใน localStorage
+
+    // ลดค่า ID ของบุ๊คมาร์คที่เหลือใน Local Storage
+    let numBookmarks = localStorage.getItem("numBookmarks") || 0;
+    const num = Number(numBookmarks) - 1;
+    localStorage.setItem("numBookmarks", num);
+
+    // อัปเดต ID ของบุ๊คมาร์คที่เหลือใน Local Storage
+    for (let i = id + 1; i <= Number(numBookmarks); i++) {
+      const bookmarkData = JSON.parse(localStorage.getItem("bookmark" + i));
+      localStorage.removeItem("bookmark" + i); // ลบบุ๊คมาร์คที่ ID เดิม
+      bookmarkData.id = i - 1; // ปรับ ID ใหม่
+      localStorage.setItem("bookmark" + (i - 1), JSON.stringify(bookmarkData)); // เซ็ทบุ๊คมาร์คที่มี ID ใหม่
+    }
+  }
+};
 
     const fetchBookmarks = async () => {
       bookmarks.value = await db.bookmarks.toArray();

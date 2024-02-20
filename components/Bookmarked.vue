@@ -1,16 +1,32 @@
 <template>
   <div>
-    <div class="scrollable-container01 ml-20 mr-16 pt-16">
+    <div class="ml-20 mr-16 pb-16 h-full bg-[url('/bg_mobile.jpg')]">
       <!-- ใช้วงวนเพื่อแสดง BookmarkComponent สำหรับทุกข้อมูลที่พบใน loadedBookmarks -->
-      <template v-for="bookmark in loadedBookmarks" :key="bookmark.id">
-        <Botqarm
-          :text="bookmark.text"
-          :minitext="bookmark.minitext"
-          :image="bookmark.image"
-        />
-        <!-- เพิ่มปุ่มลบบุ๊คมาร์ค -->
-        <button @click="removeBookmark(bookmark.id)">ลบบุ๊คมาร์ค</button>
-      </template>
+      <div v-for="bookmark in loadedBookmarks" :key="bookmark.id" class="mt-8">
+          <div
+            id="Bookmark{{ bookmark.id }}"
+            class="flex p-[28px] mt-10 bg-white max-h-[500px] max-w-[1100PX] rounded-2xl"
+          >
+            <div></div>
+            <img
+              :src="bookmark.image"
+              class="h-[150px] pr-[28px] justify-center items-center"
+            />
+            <div class="mr-4">
+              <div><a :href="bookmark.Link"> {{ bookmark.text }} </a></div>
+              <br />
+              <div>{{ bookmark.minitext }}</div>
+            </div>
+            <div class="flex mt-0 text-xl">
+              <button  @click="removeBookmark(bookmark.id)" class="mr-4">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <button class="mr-4">
+                <i class="fa-solid fa-share-nodes"></i>
+              </button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </template>
@@ -45,18 +61,23 @@ const removeBookmark = (id) => {
 
     // ลดค่า ID ของบุ๊คมาร์คที่เหลือใน Local Storage
     let numBookmarks = localStorage.getItem("numBookmarks") || 0;
-    const num = Number(numBookmarks) - 1;
-    localStorage.setItem("numBookmarks", num);
+    if (numBookmarks > 0) {
+      const num = Number(numBookmarks) - 1;
+      localStorage.setItem("numBookmarks", num);
 
-    // อัปเดต ID ของบุ๊คมาร์คที่เหลือใน Local Storage
-    for (let i = id + 1; i <= Number(numBookmarks); i++) {
-      const bookmarkData = JSON.parse(localStorage.getItem("bookmark" + i));
-      localStorage.removeItem("bookmark" + i); // ลบบุ๊คมาร์คที่ ID เดิม
-      bookmarkData.id = i - 1; // ปรับ ID ใหม่
-      localStorage.setItem("bookmark" + (i - 1), JSON.stringify(bookmarkData)); // เซ็ทบุ๊คมาร์คที่มี ID ใหม่
+      // อัปเดต ID ของบุ๊คมาร์คที่เหลือใน Local Storage
+      if (id === 1) {
+        for (let i = 2; i <= Number(numBookmarks); i++) {
+          const bookmarkData = JSON.parse(localStorage.getItem("bookmark" + i));
+          localStorage.removeItem("bookmark" + i); // ลบบุ๊คมาร์คที่ ID เดิม
+          bookmarkData.id = i - 1; // ปรับ ID ใหม่
+          localStorage.setItem("bookmark" + (i - 1), JSON.stringify(bookmarkData)); // เซ็ทบุ๊คมาร์คที่มี ID ใหม่
+        }
+      }
     }
   }
 };
+
 
 
 // เรียกใช้งานฟังก์ชันโหลดบุ๊คมาร์คเมื่อคอมโพเนนท์ถูกโหลด
