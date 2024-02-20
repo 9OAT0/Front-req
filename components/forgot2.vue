@@ -1,7 +1,8 @@
 <template>
-  <div  class="headerf2 flex  text-black justify-center">
+  <div  class=" flex  text-black justify-center">
+    <img src="/public/cafe7.jpg" class="bgimg">
       <div class="loginblock bg-orange-200 rounded-3xl font-bold">
-          <div class="bg-red-500 h-10 w-10 ml-44 mt-5">
+          <div class=" h-10 w-10 ml-44 mt-5">
               logo
           </div>
           <div class="bg-black w-cover h-1">
@@ -31,10 +32,6 @@
   </template>
   
   <style>
-  .headerf2{
-      background-image: url(/cafe7.jpg);
-      height: 839px;
-  }
   .loginblock{
       height: 600px;
       width: 400px;

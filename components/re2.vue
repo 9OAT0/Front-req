@@ -1,7 +1,8 @@
 <template>
-  <div  class="headerre2 flex  text-black justify-center">
+  <div  class=" flex  text-black justify-center">
+    <img src="/public/cafe2.jpg" class="bgimg">
       <div class="registerblock  bg-orange-200 rounded-3xl font-bold">
-          <div class="bg-red-500 h-10 w-10 ml-64 mt-5">
+          <div class=" h-10 w-10 ml-64 mt-5">
               logo
           </div>
           <div class="bg-black w-cover h-1">
@@ -10,11 +11,11 @@
           <div class=" mt-5 ml-2 text-2xl">
               Address
           </div>
-          <div class="flex w-96 mt-2 tems-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black" >
+          <div class="flex w-96 mt-2 tems-center rounded-[28px] p-[8px] bg-white border border-solid border-black" >
               <span class="pr-2"> 
                     <i class="fa-solid "></i>
               </span>
-              <input type=" text " placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px;">
+              <input type=" text " placeholder="Enter" class="bg-white focus:outline-none placeholder:text-black" style="width: 300px;">
           </div>
           <br>
           <br>
@@ -27,17 +28,17 @@
             </div>
           </div>
           <div class="flex flex-raw ml-1 items-start justify-between">
-            <div class="flex w-52 mt-2 tems-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black" >
+            <div class="flex w-52 mt-2 tems-center rounded-[28px] p-[8px] bg-white border border-solid border-black" >
               <span class="pr-2"> 
                     <i class="fa-solid "></i>
               </span>
-              <input type=" text " placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px;">
+              <input type=" text " placeholder="Enter" class="bg-white focus:outline-none placeholder:text-black" style="width: 300px;">
           </div>
-          <div class="flex w-52 mt-2 mr-14 tems-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black" >
+          <div class="flex w-52 mt-2 mr-14 tems-center rounded-[28px] p-[8px] bg-white border border-solid border-black" >
               <span class="pr-2"> 
                     <i class="fa-solid "></i>
               </span>
-              <input type=" text " placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px;">
+              <input type=" text " placeholder="Enter" class="bg-white focus:outline-none placeholder:text-black" style="width: 300px;">
           </div>
           </div>
           <br><br><br>
@@ -50,17 +51,17 @@
             </div>
           </div>
           <div class="flex flex-raw ml-1 items-start justify-between">
-            <div class="flex w-52 mt-2 tems-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black" >
+            <div class="flex w-52 mt-2 tems-center rounded-[28px] p-[8px] bg-white border border-solid border-black" >
               <span class="pr-2"> 
                     <i class="fa-solid "></i>
               </span>
-              <input type=" text " placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px;">
+              <input type=" text " placeholder="Enter" class="bg-white focus:outline-none placeholder:text-black" style="width: 300px;">
           </div>
-          <div class="flex w-52 h-32 mt-2 mr-14 tems-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black" >
+          <div class="flex w-52 h-32 mt-2 mr-14 tems-center rounded-[28px] p-[8px] bg-white border border-solid border-black" >
               <span class="pr-2"> 
                     <i class="fa-solid "></i>
               </span>
-              <input type=" text " placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px; margin-bottom: auto; overflow-wrap: break-word;">
+              <input type=" text " placeholder="Enter" class="bg-white focus:outline-none placeholder:text-black" style="width: 300px; margin-bottom: auto; overflow-wrap: break-word;">
           </div>
           </div>
           <br><br><br><br><br><br>
@@ -81,11 +82,6 @@
   </template>
   
   <style>
-  .headerre2{
-      background-image: url(/cafe2.jpg);
-      height: 839px;
-      width: 100%;
-  }
   .registerblock{
       height: 800px;
       width: 600px;
