@@ -16,7 +16,9 @@
               class="h-[150px] pr-[28px] justify-center items-center"
             />
             <div class="mr-4">
-              <div><a :href="bookmark.Link"> {{ bookmark.text }} </a></div>
+              <div>
+                <a :href="bookmark.Link"> {{ bookmark.text }} </a>
+              </div>
               <br />
               <div>{{ bookmark.minitext }}</div>
             </div>
@@ -28,9 +30,13 @@
               >
                 <i class="fa-regular fa-bookmark"></i>
               </button>
+<<<<<<< Updated upstream
               <button
                 class="mr-4"
               >
+=======
+              <button class="mr-4">
+>>>>>>> Stashed changes
                 <i class="fa-solid fa-share-nodes"></i>
               </button>
             </div>
@@ -59,7 +65,8 @@ export default {
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2020/05/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%82%E0%B8%AD%E0%B8%87-Espresso-%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F-%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1.jpg",
         Link:
-          "Botqarm1"
+          "Botqarm1",
+        id: 1
       },
       {
         text: "Specialty Coffee คืออะไร? ทำไมกาแฟไทยจึงฮิตหาทำ !",
@@ -67,8 +74,14 @@ export default {
           "ช่วงนี้หลายคนเจอคำว่า “Speacialty Coffee” อยู่บ่อยๆใช่มั้ยครับ? ถ้าอ่านแล้วคงแปลตรงตัวกันไปเลยว่าเป็น “กาแฟพิเศษ” แน่ๆ บางร้านนำไปตั้งเป็นชื่อร้านกาแฟกันเลยทีเดียว แต่ชื่อร้านนั้นก็ไม่ได้บ่งบอกว่ากาแฟในร้านนั้น Special เหมือนชื่อเสมอไปนะครับ เพราะคำว่า “Specialty Coffee” ไม่ใช่คำที่ใครจะอนุมานนำมาใช้ได้ง่ายๆ",
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2020/08/Specialty-Coffee-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%88%E0%B8%B6%E0%B8%87%E0%B8%AE%E0%B8%B4%E0%B8%95%E0%B8%AB%E0%B8%B2%E0%B8%97%E0%B8%B3-1-1.jpg",
+<<<<<<< Updated upstream
           Link:
           "Botqarm2"
+=======
+        Link:
+          "Botqarm1",
+        id: 2
+>>>>>>> Stashed changes
       },
       {
         text: "เจาะลึกกาแฟคั่วเข้มที่ครองใจคนไทยมาอย่างช้านาน",
@@ -76,8 +89,14 @@ export default {
           "กาแฟคั่วเข้มนั้นได้รับความนิยมในหมู่ผู้ที่ชื่นชอบกาแฟด้วยรสชาติที่เข้มข้นและมีกลิ่นที่ชัดเจนและมีลักษณะเฉพาะที่แตกต่างจากการคั่วกาแฟระดับอื่น แต่สิ่งที่ทำให้แตกต่างจากกาแฟประเภทอื่นๆ ",
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2023/06/%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B8%84%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1.jpg",
+<<<<<<< Updated upstream
           Link:
           "Botqarm3"
+=======
+        Link:
+          "Botqarm1",
+        id: 3
+>>>>>>> Stashed changes
       },
       {
         text: "จุดเริ่มต้นของ Latte Art ศิลปะการวาดบนกาแฟที่น่าหลงใหล",
@@ -85,8 +104,14 @@ export default {
           "Latte Art หรือการแต่งหน้าฟองนมบนแก้วกาแฟ มีจุดเริ่มต้นมาจากเมืองซีแอตเทิล ประเทศสหรัฐอเมริกา จากร้านกาแฟ Espresso Vivace ของเดวิด โชเมอร์ ( David Schomer ) ผู้ที่มีความสนใจด้านงานศิลปะและพยายามหาจุดแตกต่างให้กาแฟที่เขาขาย จึงพยายามคิดค้นกาแฟที่ดีที่สุด เพื่อทำให้ผู้ดื่มประทับใจ เดวิดเป็นหนึ่งในผู้คิดค้นและทำให้ลาเต้อาร์ตได้รับความนิยมในช่วงทศวรรษ 1990 จนถึงปัจจุบัน ",
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2020/08/%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87-Latte-Art-1.jpg",
+<<<<<<< Updated upstream
           Link:
           "Botqarm4"
+=======
+        Link:
+          "Botqarm1",
+        id: 4
+>>>>>>> Stashed changes
       },
       // เพิ่มบุ๊คมาร์คเพิ่มเติมตามต้องการ
     ];
@@ -97,7 +122,7 @@ export default {
 
     const saveBookmark = (id, bookmarkData) => {
   // เช็คว่าบุ๊คมาร์คที่ต้องการบันทึกมีอยู่ใน localStorage หรือไม่
-  const existingBookmark = localStorage.getItem('bookmark' + (id - 10));
+  const existingBookmark = localStorage.getItemby('bookmark' + (id));
   console.log(existingBookmark)
   
   if (!existingBookmark) {
