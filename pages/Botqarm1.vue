@@ -1,16 +1,18 @@
 <template>
-<<<<<<< Updated upstream
-    <div class="bg-local bg-cover " style="background-image: url('/bg_mobile.jpg')">
-        <div class="fixed w-full">
+  <div
+    class="bg-local bg-cover"
+    style="background-image: url('/bg_mobile.jpg')"
+  >
+    <div class="fixed w-full">
       <Header-comp />
     </div>
-      <div class="flex justify-center text-xl pt-20">
-        เรื่องราวของ Espresso และเครื่องทำกาแฟ จุดเริ่มต้นของกาแฟสมัยใหม่
-      </div>
-      <div class="flex justify-center mt-10 h-[500px]">
-        <img src="/เรื่องราวของ-Espresso-และเครื่องทำกาแฟ-จุดเริ่ม.webp" alt="" />
-      </div>
-      <div class="mt-10 mr-10 ml-10">
+    <div class="flex justify-center text-xl pt-20">
+      เรื่องราวของ Espresso และเครื่องทำกาแฟ จุดเริ่มต้นของกาแฟสมัยใหม่
+    </div>
+    <div class="flex justify-center mt-10 h-[500px]">
+      <img src="/เรื่องราวของ-Espresso-และเครื่องทำกาแฟ-จุดเริ่ม.webp" alt="" />
+    </div>
+    <div class="mt-10 mr-10 ml-10">
       <p>
         ถ้าพูดถึง Espresso (เอสเพรสโซ่) คือน้ำสีเข้มๆ ที่ถูกสกัดมาจากเครื่องกาแฟ
         ไม่ว่าจะเป็นเครื่องทำกาแฟอัตโนมัติ
@@ -61,7 +63,7 @@
         ที่เป็นเครื่องดื่มกาแฟรสเข้มนั้น ถูกนำมารังสรรค์ให้กลายเป็นเมนูอื่นๆ
         ในปัจจุบันจะใช้ Espresso เป็น Base หลักในการทำทั้งนั้นครับ อาทิเช่น
       </p>
-      <br>
+      <br />
       <ul>
         <li>
           <span style="font-size: 18pt">Americano = Espresso + น้ำร้อน</span>
@@ -103,13 +105,3 @@
     <Footer />
   </div>
 </template>
-=======
-    <Header-comp />
-    <div class="bg-[('/mobile_bg.jpg')] bg-cover">
-        <div class="flex justify-center items-center text-2xl mt-8">
-            เรื่องราวของ Espresso และเครื่องทำกาแฟ จุดเริ่มต้นของกาแฟสมัยใหม่
-        </div>
-        
-    </div>
-</template>
->>>>>>> Stashed changes
