@@ -8,7 +8,7 @@
             <productdetails />
         </div>
     </div>
-    <div class="modal">
+    <div class="modal" style="display: none;">
         <div class="modal-bg"></div>
         <div class="modal-page">
             <div class="added">
@@ -119,13 +119,11 @@
 }
 .กรอบตะกร้าสินค้า {
     width: 350;
-    background: #ffa8a8;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
 }
 .เลือกสินค้าต่อ {
-    background: #ffe0e0;
     margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
