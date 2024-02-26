@@ -742,7 +742,7 @@
         <div class="flex justify-center">
         <img
           decoding="async"
-          class="w-[700px]"
+          class="w-[500px]"
           src="/2021_blog_PackageShipCoffee_1000x1000.jpg"
           data-src="https://coffeepressthailand.com/wp-content/uploads/2023/06/เมล็ดกาแฟสด.jpg"
           alt="เมล็ดกาแฟสด"
@@ -784,6 +784,9 @@
   <Footer />
 </template>
 <style>
+html {
+  scroll-behavior: smooth;
+}
 #ez-toc-container {
   background: #f9f9f9;
   border: 1px solid #aaa;
