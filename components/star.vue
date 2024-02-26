@@ -55,36 +55,26 @@
     font-size: 35px;
     text-shadow: 1px 1px 0 #000000;
     cursor: pointer;
-
 }
 .star input:checked + label ~ label{
     color: #bfbfbf;
 }
-
 .star label:active{
     transform: scale(0.8);
     transition: 0.3s ease;
 }
-
 .ข้อมูล{
     background: rgb(255, 255, 255);
     width : 100%;
     height: 400px;
 }
-.Review{
-    background : rgb(244, 227, 193);
-    height : 400px;
-}
-
 .star .post{
     display: none;
 }
-
 .star .text{
     font-size: 25px;
     color: #666;
     font-weight: 500;
-
 }
 .star .edit{
     font-size: 17px;

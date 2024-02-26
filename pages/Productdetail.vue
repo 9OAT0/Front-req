@@ -62,7 +62,8 @@
     align-items: center;
     justify-content: center;
 }
-.modal {
+.modal,
+.modal-bg {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -74,6 +75,7 @@
     display: flex;
 }
 .modal-page {
+    z-index: 99;
     width: 800px;
     height: 200px;
     background: #fff;
@@ -133,3 +135,5 @@
     margin-left: 10px;
 }
 </style>
+<script>
+</script>
