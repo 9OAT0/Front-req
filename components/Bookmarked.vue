@@ -66,7 +66,7 @@ const removeBookmark = (id) => {
       localStorage.setItem("numBookmarks", num);
 
       // อัปเดต ID ของบุ๊คมาร์คที่เหลือใน Local Storage
-      if (id === 1) {
+      if (id === 1 && numBookmarks > 1) { // เพิ่มเงื่อนไข numBookmarks > 1
         for (let i = 2; i <= Number(numBookmarks); i++) {
           const bookmarkData = JSON.parse(localStorage.getItem("bookmark" + i));
           localStorage.removeItem("bookmark" + i); // ลบบุ๊คมาร์คที่ ID เดิม
@@ -77,6 +77,7 @@ const removeBookmark = (id) => {
     }
   }
 };
+
 
 
 

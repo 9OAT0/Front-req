@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-[28px] mt-10 bg-white h-[450px] w-[300px] rounded-2xl flex flex-col justify-center items-center m-7"
+    class="p-[28px] mt-16 bg-white h-[450px] w-[300px] rounded-2xl flex flex-col justify-center items-center m-7"
   >
     <div class="">
       <img src="/Blend.jpg" alt="นี้กาแฟซื้อป่าว" class="h-[250px]" />

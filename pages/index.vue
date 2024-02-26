@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[url('/bg_mobile.jpg')]">
-    <div class="fixed w-full">
+    <div class="fixed w-screen">
     <Header-comp />
   </div>
     <Hero />
