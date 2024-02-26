@@ -5,8 +5,13 @@
             56y7yeofk
         </div>
         <div class="Review">
+           
             <div class="star">
-                <div>Star rating</div>
+                <div class="post">
+                <div class="text">ขอบคุณสำหรับคะแนนและความคิดเห็น!</div>
+                <div class="edit">แก้ไข</div>
+            </div>
+                <div>Rating Star 1-5 </div>
                 <input type="radio" name="rating1" id="rating1">
                 <label for="rating1" class="fa fa-star"></label>
                 <input type="radio" name="rating1" id="rating2">
@@ -17,33 +22,44 @@
                 <label for="rating4" class="fa fa-star"></label>
                 <input type="radio" name="rating1" id="rating5">
                 <label for="rating5" class="fa fa-star"></label>
+                <form action="#">
+                    <header></header> 
+                    <div class="textarea">
+                        <textarea cold="30" placeholder="กรอกความคิดเห็นของคุณ"></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Post</button>
+
+                    </div>
+                </form>
                   
            </div>
-            eopfepokf
-            
+
         </div>
-
     </div>
-
     
 </template>
 
+
 <style>
 .star{
-    height: 250px;
-    width: 400px;
-    background: rgb(146, 140, 140);
-    border: 4px solid #ffc400;
+    height: 320px;
+    width: 500px;
+    background: rgb(250, 237, 202);
+    border: 4px solid #767676;
+    border-radius: 25px;
     padding: 20px;
+    margin-left: 100px;
+    position: relative;
 }
 .star div{
-   color: #ffe600;
+   color: #000000;
    font-size: 30px;
    font-family: sans-serif;
    font-weight: 800;
-   text-align: center;
+   text-align: left;
    text-transform: uppercase;
-   padding: 20px 0;
+   padding: 2px 0;
 
 }
 .star input{
@@ -51,13 +67,13 @@
 }
 
 .star input + label{
-    font-size: 60 px;
-    text-shadow: 1px 1px 0 #ffe400;
+    font-size: 35px;
+    text-shadow: 1px 1px 0 #000000;
     cursor: pointer;
 
 }
 .star input:checked + label ~ label{
-    color: #838383;
+    color: #bfbfbf;
 }
 
 .star label:active{
@@ -75,4 +91,79 @@
     height : 400px;
 }
 
+.star .post{
+    display: none;
+}
+
+.star .text{
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+
+}
+.star .edit{
+    font-size: 17px;
+    color: #666;
+    font-weight: 500;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+
+form header{
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+
+
+}
+
+form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 12px;
+    resize: none;
+}
+
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .btn button:hover{
+    background: #1b1b1b;
+
+}
 </style>
