@@ -1,12 +1,14 @@
 <template>
-    <div class="w-[280px] h-[400px] m-[8px]">
-        <div class="">
-            <img src="/Blend.jpg" class="w-[280px] h-[262px] object-contain">
+    <div class="w-[280px] h-[400px] mr-[8px] ">
+        <div class="ช่องใส่รูป">
+            <div class="รูป22">
+                <img src="/Blend.jpg">
+            </div>
         </div>
         <div class="ช่องชื่อสินค้า">
             PRI-DEE : Pridee Blend 100%Arabica Cofee Chocolate, Nutty, Caramel 350g       
         </div>
-        <div class="w-[280px] h-[45px] text-center text-[24px] text-notthesamegreen">
+        <div class="ช่องราคา">
             ฿145
         </div>
         <div class="flex justify-center">
@@ -28,5 +30,23 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.ช่องราคา {
+    width: 280px;
+    height: 45px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(127, 158, 113);
+}
+.ช่องใส่รูป {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  280px;
+    height: 262px;
+}
+.รูป22 {
+    height: 100%;
+    width: 200px;
 }
 </style>
