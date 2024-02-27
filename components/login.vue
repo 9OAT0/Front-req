@@ -49,7 +49,7 @@
         <br>
         <br>
         <div class="flex justify-center">
-            <a href="home">
+            <a href="">
                 <button id="loginb" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                 Login
                 </button>
@@ -73,28 +73,6 @@ export default {
     }
   }
 };
-
-function sendDataToAnotherPage() {
-    var newContent = 'Profile';
-    var newId = 'profile';
-
-    // ส่งข้อมูลผ่าน AJAX request
-    $.ajax({
-        url: 'header.vue', // URL ของหน้าอื่น
-        type: 'post', // หรือ 'get' ตามที่คุณต้องการ
-        data: { content: newContent, id: newId },
-        success: function(response) {
-            // หากการของคุณสำเร็จ
-            console.log('ส่งข้อมูลไปยังหน้าอื่นแล้ว');
-            // ทำสิ่งที่คุณต้องการหลังจากนั้น เช่น redirect ไปยังหน้าอื่น
-            // window.location.href = 'other_page.html';
-        },
-        error: function(xhr, status, error) {
-            // หากการขอข้อมูลไม่สำเร็จ
-            console.error('มีข้อผิดพลาดในการส่งข้อมูล: ', error);
-        }
-    });
-}
 </script>
 
 <style>
