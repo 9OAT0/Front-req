@@ -171,5 +171,6 @@ $(document).ready(() => {
     for (let i = 0; i < product.length; i++) {
         html += ``;
     }
+    $('#')
 })
 </script>

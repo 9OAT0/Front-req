@@ -3,14 +3,9 @@
     <div class="ml-5 mt-2">หน้าแรก สินค้าทั้งหมด</div>
     <div class="text-center text-[36px]">สินค้าทั้งหมด</div>
     <div class="ml-5 mt-2">พบสินค้า 8 ชิ้น</div>
-        <div id ="productlist" class="product">
+        <div class="product" >
             <product2 />
-            <product2 />
-            <product2 />
-            <product2 />
-            <product2 />
-            <product2 />
-            <product2 />
+            
          </div>
         <div class="flex justify-center items-center mt-[10px]">
             
@@ -27,8 +22,10 @@
     
 }
 </style>
+
 <script>
-var product = [{
+var product = [
+    {
     id: 1,
     img: 'https://scontent.fbkk5-7.fna.fbcdn.net/v/t39.30808-6/420124980_419838760554723_8957450369290128354_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=GmqeJeDC0xQAX8ZIhfd&_nc_ht=scontent.fbkk5-7.fna&oh=00_AfBQ0dFcYhdgPYn3MqMMd2XAEiB0zzPu79MKsUqwu2BFCQ&oe=65E31D02',
     name: 'PrideeBlend',
@@ -56,7 +53,7 @@ var product = [{
     price: 550,
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, veniam odit amet et sint nulla.',
     type: 'MediumRoast',
-}]
+}];
 
 
 </script>
