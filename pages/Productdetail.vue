@@ -166,11 +166,4 @@ var porduct = [{
     type: 'MediumRoast',
 }]
 
-$(document).ready(() => {
-    var html = '';
-    for (let i = 0; i < product.length; i++) {
-        html += ``;
-    }
-    $('#')
-})
 </script>
