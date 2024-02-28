@@ -1,25 +1,41 @@
 <template>
   <div class="overlay" v-if="isOverlayVisible">
-    <!-- เนื้อหาของ overlay ที่ต้องการแสดง -->
-    <div class="overlay-content w-[500px] h-[500px]">
-      <!-- ตัวอย่างเนื้อหา -->
+    <div class="overlay-content w-[500px]">
       <button @click="closeOverlay" class="text-xl float-right">
         <i class="fa-solid fa-x"></i>
       </button>
+      <h2 class="text-s font-bold mb-4">แชร์บทความนี้</h2>
       <div class="bg-white p-8 rounded-lg">
-        <h2 class="text-2xl font-bold mb-4">แชร์บทความนี้</h2>
-        <div class="flex space-x-4">
+        <div class="flex space-x-4 overflow-x-auto" style="max-width: 100%">
           <button
             @click="shareTo('facebook')"
-            class="bg-blue-500 text-white px-4 py-2 rounded-lg"
+            class="bg-blue-500 text-white w-[60px] h-[60px] rounded-full"
           >
-            Facebook
+            F
           </button>
           <button
             @click="shareTo('twitter')"
-            class="bg-blue-400 text-white px-4 py-2 rounded-lg"
+            class="bg-black text-white w-[60px] h-[60px] rounded-full"
           >
-            Twitter
+            X
+          </button>
+          <button
+            @click="shareTo('WhatApp')"
+            class="bg-green-500 text-white w-[60px] h-[60px] rounded-full"
+          >
+            W
+          </button>
+          <button
+            @click="shareTo('Instargram')"
+            class="bg-gradient-to-br from-purple-600 via-orange-500 to-yellow-300 text-white w-[60px] h-[60px] rounded-full"
+          >
+            IG
+          </button>
+          <button
+            @click="shareTo('Massage')"
+            class="bg-gradient-to-br from-purple-700 to-blue-700 text-white w-[60px] h-[60px] rounded-full"
+          >
+            M
           </button>
         </div>
         <div class="mt-4">
@@ -27,7 +43,7 @@
             type="text"
             id="link"
             readonly
-            :value="sharedLink"
+            :value="'https://front-req.web.app/' + this.Link"
             class="w-full bg-gray-100 p-2 rounded-md border border-solid border-black"
           />
           <button
@@ -37,62 +53,85 @@
             คัดลอกลิ้งก์
           </button>
         </div>
-        <button
-          @click="closeShareOverlay"
-          class="absolute top-0 right-0 mr-4 mt-2 text-gray-500 hover:text-gray-700"
-        >
-          <i class="fas fa-times"></i>
-        </button>
       </div>
     </div>
   </div>
 </template>
   
-  <script>
+<script>
+import db from "./database.js";
+
 export default {
+  props: {
+    Link: String,
+  },
   data() {
     return {
       isOverlayVisible: false,
     };
   },
   methods: {
-    openOverlay() {
+    openOverlay(Link) { // รับค่า Link เพื่อนำไปใช้งาน
       this.isOverlayVisible = true;
-    },
+      console.log(Link); // แสดงค่า link ที่ถูกส่งมาผ่าน prop
+    },  
     closeOverlay() {
       this.isOverlayVisible = false;
     },
     shareTo(platform) {
-      // ทำงานโดยใช้ platform (Facebook, Twitter) ที่ระบุ
-      // เช่นเรียกใช้ API หรือโค้ดที่เกี่ยวข้องกับการแชร์ไปยังแต่ละแพลตฟอร์ม
       console.log("Sharing to " + platform);
     },
 
     copyLink() {
-      const linkInputElement = document.getElementById("link");
+      if (this.Link) {
+        const Link = this.Link;
+        console.log("Link to " + Link);
 
-      // ทำการเลือกข้อความภายใน link element
-      linkInputElement.select();
+        navigator.clipboard
+          .writeText("https://front-req.web.app/" + Link)
+          .then(() => {
+            alert(
+              "ลิ้งค์ถูกคัดลอกแล้ว: " + "https://front-req.web.app/" + Link
+            );
+          })
+          .catch((err) => {
+            console.error("เกิดข้อผิดพลาดในการคัดลอกลิงก์: ", err);
+          });
+      } else {
+        console.error("Link is undefined or null");
+      }
+    },
 
-      // ทำการคัดลอกข้อความภายใน link element
-      document.execCommand("copy");
+    async mounted() {
+      try {
+        // ดึงข้อมูลจาก object store ชื่อ bookmarks
+        const newBookmarks = await db.bookmarks.toArray();
 
-      // แสดงข้อความแจ้งเตือนว่าลิ้งค์ได้ถูกคัดลอกแล้ว
-      alert("ลิ้งค์ถูกคัดลอกแล้ว: " + linkInputElement.value);
+        // ลบข้อมูลเก่าในฐานข้อมูล indexedDB ทั้งหมด
+        await db.bookmarks.clear();
+
+        // เพิ่มข้อมูลใหม่ลงในฐานข้อมูล indexedDB
+        await db.bookmarks.bulkAdd(newBookmarks);
+
+        // เก็บข้อมูลไว้ใน data property ของ Vue component
+        this.newBookmarks = newBookmarks;
+      } catch (error) {
+        console.error("Error accessing indexedDB:", error);
+      }
     },
   },
 };
 </script>
   
-  <style scoped>
+<style scoped>
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* สีพื้นหลังแบบ semi-transparent */
-  z-index: 9999; /* ให้ overlay อยู่ด้านบนสุด */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,4 +143,3 @@ export default {
   border-radius: 5px;
 }
 </style>
-  

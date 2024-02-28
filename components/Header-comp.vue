@@ -2,7 +2,9 @@
   <div class="bg-NavBarBG flex justify-between align-middle p-4 pl-[45px] pr-8 w-full">
     <div class="flex justify-between">
       <h1 class="pr-4 flex items-center text-black">
+        <button>
         <i class="fa-solid fa-bars items-end pr-4" @click="toggleSlideBar"></i>
+      </button>
         <a href="/" class="text-xl"> Pridee coffee </a>
       </h1>
       <div class="flex w-max items-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black">

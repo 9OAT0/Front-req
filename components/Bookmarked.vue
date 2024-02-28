@@ -1,90 +1,117 @@
 <template>
-  <div>
-    <div class="ml-20 mr-16 pb-16 h-full bg-[url('/bg_mobile.jpg')]">
+  <div class="h-full">
+    <shareOver ref="overlayRef"></shareOver>
+    <div class="pl-20 pr-16 pb-16 h-full bg-[url('/bg_mobile.jpg')]">
       <!-- ใช้วงวนเพื่อแสดง BookmarkComponent สำหรับทุกข้อมูลที่พบใน loadedBookmarks -->
       <div v-for="bookmark in loadedBookmarks" :key="bookmark.id" class="mt-8">
-          <div
-            id="Bookmark{{ bookmark.id }}"
-            class="flex p-[28px] mt-10 bg-white max-h-[500px] max-w-[1100PX] rounded-2xl"
-          >
-            <div></div>
-            <img
-              :src="bookmark.image"
-              class="h-[150px] pr-[28px] justify-center items-center"
-            />
-            <div class="mr-4">
-              <div><a :href="bookmark.Link"> {{ bookmark.text }} </a></div>
-              <br />
-              <div>{{ bookmark.minitext }}</div>
+        <div
+          id="Bookmark{{ bookmark.id }}"
+          class="flex p-[28px] mt-10 bg-white max-h-[500px] max-w-[1100PX] rounded-2xl"
+        >
+          <div></div>
+          <img
+            :src="bookmark.image"
+            class="h-[150px] pr-[28px] justify-center items-center"
+          />
+          <div class="mr-4">
+            <div>
+              <a :href="bookmark.Link"> {{ bookmark.text }} </a>
             </div>
-            <div class="flex mt-0 text-xl">
-              <button  @click="removeBookmark(bookmark.id)" class="mr-4">
-                <i class="fa-solid fa-trash"></i>
-              </button>
-              <button class="mr-4">
-                <i class="fa-solid fa-share-nodes"></i>
-              </button>
-            </div>
+            <br />
+            <div>{{ bookmark.minitext }}</div>
+          </div>
+          <div class="flex mt-0 text-xl">
+            <button @click="removeBookmark(bookmark.id)" class="mr-4">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <button @click="openOverlay(bookmark.Link)" class="mr-4">
+              <i class="fa-solid fa-share-nodes"></i>
+            </button>
           </div>
         </div>
+      </div>
     </div>
+    <shareOver ref="overlayRef" :Link="overlayLink"></shareOver>
   </div>
 </template>
 
-<script setup>
+<script>
 import { ref, onMounted } from "vue";
+import shareOver from "./shareOver.vue";
 
-// ประกาศตัวแปร ref สำหรับเก็บบุ๊คมาร์คที่โหลดมา
-const loadedBookmarks = ref([]);
+export default {
+  components: {
+    shareOver,
+  },
+  setup() {
+    const overlayRef = ref(null);
+    const loadedBookmarks = ref([]);
+    const overlayLink = ref("");
 
-// ฟังก์ชันสำหรับโหลดข้อมูลบุ๊คมาร์คจาก localStorage
-const loadBookmarks = () => {
-  let num = 1;
+    const loadBookmarks = () => {
+      let num = 1;
 
-  while (true) {
-    const savedBookmark = localStorage.getItem("bookmark" + num);
-    if (!savedBookmark) break;
+      while (true) {
+        const savedBookmark = localStorage.getItem("bookmark" + num);
+        if (!savedBookmark) break;
 
-    const bookmarkData = JSON.parse(savedBookmark);
-    bookmarkData.id = num;
-    loadedBookmarks.value.push(bookmarkData);
-    num++;
-  }
-};
+        const bookmarkData = JSON.parse(savedBookmark);
+        bookmarkData.id = num;
+        loadedBookmarks.value.push(bookmarkData);
+        num++;
+      }
+    };
 
-// ฟังก์ชันสำหรับลบบุ๊คมาร์ค
-const removeBookmark = (id) => {
-  const index = loadedBookmarks.value.findIndex((bookmark) => bookmark.id === id);
-  if (index !== -1) {
-    loadedBookmarks.value.splice(index, 1); // ลบบุ๊คมาร์คออกจากอาร์เรย์ loadedBookmarks
-    localStorage.removeItem("bookmark" + id); // ลบบุ๊คมาร์คใน localStorage
+    const removeBookmark = (id) => {
+      const index = loadedBookmarks.value.findIndex(
+        (bookmark) => bookmark.id == id
+      );
+      if (index !== -1) {
+        loadedBookmarks.value.splice(index, 1);
+        localStorage.removeItem("bookmark" + id);
 
-    // ลดค่า ID ของบุ๊คมาร์คที่เหลือใน Local Storage
-    let numBookmarks = localStorage.getItem("numBookmarks") || 0;
-    if (numBookmarks > 0) {
-      const num = Number(numBookmarks) - 1;
-      localStorage.setItem("numBookmarks", num);
+        let numBookmarks = localStorage.getItem("numBookmarks") || 0;
+        if (numBookmarks > 0) {
+          const num = Number(numBookmarks) - 1;
+          localStorage.setItem("numBookmarks", num);
 
-      // อัปเดต ID ของบุ๊คมาร์คที่เหลือใน Local Storage
-      if (id === 1 && numBookmarks > 1) { // เพิ่มเงื่อนไข numBookmarks > 1
-        for (let i = 2; i <= Number(numBookmarks); i++) {
-          const bookmarkData = JSON.parse(localStorage.getItem("bookmark" + i));
-          localStorage.removeItem("bookmark" + i); // ลบบุ๊คมาร์คที่ ID เดิม
-          bookmarkData.id = i - 1; // ปรับ ID ใหม่
-          localStorage.setItem("bookmark" + (i - 1), JSON.stringify(bookmarkData)); // เซ็ทบุ๊คมาร์คที่มี ID ใหม่
+          if (id === 1 && numBookmarks > 1) {
+            for (let i = 2; i <= Number(numBookmarks); i++) {
+              const bookmarkData = JSON.parse(
+                localStorage.getItem("bookmark" + i)
+              );
+              localStorage.removeItem("bookmark" + i);
+              bookmarkData.id = i - 1;
+              localStorage.setItem(
+                "bookmark" + (i - 1),
+                JSON.stringify(bookmarkData)
+              );
+            }
+          }
         }
       }
-    }
-  }
+    };
+
+    const openOverlay = (Link) => {
+      overlayLink.value = Link;
+      if (overlayRef.value) {
+        overlayRef.value.openOverlay();
+      }
+    };
+
+    onMounted(() => {
+      loadBookmarks();
+    });
+
+    return {
+      overlayRef,
+      openOverlay,
+      loadedBookmarks,
+      removeBookmark,
+      overlayLink,
+    };
+  },
 };
-
-
-
-
-// เรียกใช้งานฟังก์ชันโหลดบุ๊คมาร์คเมื่อคอมโพเนนท์ถูกโหลด
-onMounted(() => {
-  loadBookmarks();
-});
 </script>
 
 <style>
