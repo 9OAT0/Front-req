@@ -1,12 +1,12 @@
 <template>
   <div class="h-[618px]">
-    <shareOver ref="overlayRef"></shareOver>
     <div class="text-2xl pl-[50px] pt-[60px]">บทความเกี่ยวกับกาแฟ</div>
     <div
       class="justify-center flex-col scrollable-container01 mt-8 ml-20 mr-16"
     >
       <div class="mt-8">
         <div v-for="bookmark in bookmarks" :key="bookmark.id" class="mt-8">
+          
           <div
             id="Bookmark{{ bookmark.id }}"
             class="flex p-[28px] mt-10 bg-white max-h-[500px] max-w-[1100PX] rounded-2xl"
@@ -25,13 +25,13 @@
             </div>
             <div class="flex mt-0 text-xl">
               <button
-                v-if="!bookmark.saved"
+                v-if="!bookmark.saved" 
                 @click="saveBookmark(bookmark.id, bookmark)"
                 class="mr-4"
               >
                 <i class="fa-regular fa-bookmark"></i>
               </button>
-              <button @click="openOverlay()" class="mr-4">
+              <button @click="openOverlay(bookmark.Link)" class="mr-4">
                 <i class="fa-solid fa-share-nodes"></i>
               </button>
             </div>
@@ -39,6 +39,9 @@
         </div>
       </div>
     </div>
+        <!-- เรียกใช้ Component shareOver.vue -->
+        <shareOver ref="overlayRef" :Link="overlayLink"></shareOver>
+
   </div>
 </template>
 
@@ -51,7 +54,7 @@ export default {
   setup() {
     const bookmarks = ref([]);
     const overlayRef = ref(null);
-    
+    const overlayLink = ref('');
 
     const newBookmarks = [
       // ข้อมูลบุ๊คมาร์คใหม่ที่ต้องการบันทึก
@@ -123,6 +126,7 @@ export default {
       if (index !== -1) {
         loadedBookmarks.value.splice(index, 1); // ลบบุ๊คมาร์คออกจากอาร์เรย์ loadedBookmarks
         localStorage.removeItem("bookmark" + id); // ลบบุ๊คมาร์คใน localStorage
+        
 
         // ลดค่า ID ของบุ๊คมาร์คที่เหลือใน Local Storage
         let numBookmarks = localStorage.getItem("numBookmarks") || 0;
@@ -152,11 +156,14 @@ export default {
       fetchBookmarks();
     });
 
-    const openOverlay = () => {
-      if (overlayRef.value){
+    const openOverlay = (Link) => {
+      overlayLink.value = Link; // กำหนดค่า Link สำหรับแสดงใน Overlay
+      if (overlayRef.value) {
         overlayRef.value.openOverlay();
-      } // เรียกใช้งานฟังก์ชัน openOverlay ใน Component Overlay
+      }
     };
+
+
 
     return {
       bookmarks,
@@ -164,6 +171,7 @@ export default {
       removeBookmark,
       overlayRef,
       openOverlay,
+      overlayLink,
     };
   },
   components: {

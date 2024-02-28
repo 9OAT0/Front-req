@@ -4,7 +4,9 @@
 @click.self="$emits('close')" >
   <div class="flex items-center justify-between p-4 border-b border-gray-700">
     <button class="text-white" @click="$emit('close')">Peedee coffee</button>
-    <i class="fa-solid fa-xmark" @click="toggleSlideBar"></i>
+    <button>
+    <i class="fa-solid fa-xmark hover:pointer-events-auto" @click="toggleSlideBar"></i>
+  </button>
   </div>
   <ul class="list-none m-0 p-0">
     <li class="mb-2"><a href="/" class="block py-2 px-4 text-gray-300 hover:bg-gray-700">Home</a></li>
