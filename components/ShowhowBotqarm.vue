@@ -65,7 +65,7 @@ export default {
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2020/05/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%82%E0%B8%AD%E0%B8%87-Espresso-%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F-%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1.jpg",
         Link: "Botqarm1",
-        id: 10,
+        id: 1,
       },
       {
         text: "Specialty Coffee คืออะไร? ทำไมกาแฟไทยจึงฮิตหาทำ !",
@@ -74,7 +74,7 @@ export default {
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2020/08/Specialty-Coffee-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%88%E0%B8%B6%E0%B8%87%E0%B8%AE%E0%B8%B4%E0%B8%95%E0%B8%AB%E0%B8%B2%E0%B8%97%E0%B8%B3-1-1.jpg",
         Link: "Botqarm2",
-        id: 20,
+        id: 2,
       },
       {
         text: "เจาะลึกกาแฟคั่วเข้มที่ครองใจคนไทยมาอย่างช้านาน",
@@ -83,7 +83,7 @@ export default {
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2023/06/%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B8%84%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1.jpg",
         Link: "Botqarm3",
-        id: 30,
+        id: 3,
       },
       {
         text: "จุดเริ่มต้นของ Latte Art ศิลปะการวาดบนกาแฟที่น่าหลงใหล",
@@ -92,7 +92,7 @@ export default {
         image:
           "https://coffeepressthailand.com/wp-content/uploads/2020/08/%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87-Latte-Art-1.jpg",
         Link: "Botqarm4",
-        id: 40,
+        id: 4,
       },
       // เพิ่มบุ๊คมาร์คเพิ่มเติมตามต้องการ
     ];
