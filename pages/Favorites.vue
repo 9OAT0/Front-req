@@ -62,6 +62,6 @@
   </div>
   <div class="text-left mx-96">
       <label for="fname">Username</label>
-      <input type="text" id="fname" name="fname" value="John">
+      <input type="text" id="fname" name="fname" value="jew">
     </div>
 </template>
