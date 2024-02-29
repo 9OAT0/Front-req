@@ -29,10 +29,10 @@
             <div class="text-3xl mt-10 ml-16">
                 การคืนสินค้าคืนเงิน
             </div>
-            <div class="mt-10 flex flex-row">
+            <div class="mt-10 flex flex-row justify-between">
                 <div class="text-2xl">
                     <h1 style="margin-left: 40px;"> เหตุผลในการคืนสินค้า </h1>
-                    <div class="flex w-96 tems-center p-[8px] bg-transparent border border-solid border-black ml-10 px-4 py-2 rounded" >
+                    <div class="flex w-96 mt-2 tems-center p-[8px] bg-transparent border border-solid border-black ml-10" >
                   <span class="pr-2"> 
                       <i class="fa-solid "></i>
                    </span>
@@ -40,29 +40,24 @@
                     </div>
                 </div>
                 <div class="text-2xl mr-96">
-                    <h1 style="margin-left: 40px;">
-                        ช่องทางการคืนเงิน 
-                    </h1>
-                    <div class="relative ml-10">
-                        <input type="text" v-model="selectedItem" @click="toggleList" class="border border-gray-900 px-4 py-2 rounded focus:outline-none focus:border-blue-500" placeholder="Select an item">
-                        <ul v-show="isListOpen || isSliding" class="absolute z-10 mt-1 w-40 bg-white rounded-md shadow-lg overflow-y-auto max-h-40 transition" @transitionend="handleTransitionEnd">
-                            <li v-for="item in items" :key="item.id" @click="selectItem(item)" class="py-1 px-3 cursor-pointer hover:bg-gray-100">{{ item.name }}</li>
-                        </ul>
+                    <h1 style="margin-left: 40px;"> ช่องทางการคืนเงิน </h1>
+                    <div class="flex w-96 mt-2 tems-center p-[8px] bg-transparent border border-solid border-black ml-10" >
+                  <span class="pr-2"> 
+                      <i class="fa-solid "></i>
+                   </span>
+                 <input type="" placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px;">
                     </div>
                 </div>
             </div>
-            <div class="mt-10 flex flex-row">
+            <div class="mt-10 flex flex-row justify-between">
                 <div class="text-2xl">
                     <h1 style="margin-left: 40px;"> หลักฐานคลิปวิดีโอขณะเปิดกล่อง </h1>
-                    <div class="text-2xl">
-                      <div class=" border border-black  border-solid w-96 h-12 mt-2 ml-10 flex justify-start items-center">
-                        <input type="file" @change="handleFileInputChange" class=" ml-1">
-                        <video v-if="videoUrl" controls>
-                          <source :src="videoUrl" type="video/mp4">
-                             Your browser does not support the video tag.
-                        </video>
-                      </div>
-                  </div>
+                    <div class="flex w-96 mt-2 tems-center p-[8px] bg-transparent border border-solid border-black ml-10" >
+                  <span class="pr-2"> 
+                      <i class="fa-solid "></i>
+                   </span>
+                 <input type="" placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px;">
+                    </div>
                 </div>
                 <div class="text-2xl mr-96">
                     <h1 style="margin-left: 40px;"> ที่อยู่สำหรับรับของคืน </h1>
@@ -74,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex justify-start mt-10 ml-96">
+            <div class="flex justify-center mt-20 mr-36">
             <a href="refundpage3">
                 <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                     คืนสินค้า
@@ -84,39 +79,7 @@
         </div>
     </div>
     </template>
-    <script>
-    export default {
-      data() {
-        return {
-          selectedItem: '',
-          isListOpen: false,
-          isSliding: false,
-          items: [
-            { id: 1, name: 'ธนาคาร' },
-            // เพิ่มรายการต่อไปตามความต้องการ
-          ]
-        };
-      },
-      methods: {
-        toggleList() {
-          this.isListOpen = !this.isListOpen;
-          if (this.items.length > 3) {
-            this.isSliding = !this.isSliding;
-          }
-        },
-        selectItem(item) {
-          this.selectedItem = item.name;
-          this.isListOpen = false;
-          this.isSliding = false;
-        },
-        handleTransitionEnd() {
-          if (!this.isListOpen && this.isSliding) {
-            this.isSliding = false;
-          }
-        }
-      }
-    };
-    </script>
+    
     <style>
     img {
         width: 100%;

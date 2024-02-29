@@ -29,20 +29,17 @@
             <div class="text-3xl mt-10 ml-16">
                 สถานะ
             </div>
-            <div class="mt-10">
-                <div class="text-3xl ml-14">
-                    <div class="text-red-500">
+            <div class="text-3xl mt-10 ml-10">
+                <div class="text-red-500">
                     ถูกตีกลับ
-                    </div>
                 </div>
-                <br><br>    
-                <div class=" ml-14">
+            </div>
+            <div class="flex justify-center">
                 <a href="ownrefundpage2">
                     <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                         รับสินค้าคืน
                     </button>
                 </a>
-            </div>
             </div>
         </div>
     </div>

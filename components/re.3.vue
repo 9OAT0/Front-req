@@ -1,8 +1,7 @@
 <template>
-  <div  class=" flex  text-black justify-center">
-    <img src="/public/cafe3.jpg" class="bgimg">
+  <div  class="headerre3 flex  text-black justify-center">
       <div class="loginblock bg-orange-200 rounded-3xl font-bold">
-          <div class=" h-10 w-10 ml-44 mt-5">
+          <div class="bg-red-500 h-10 w-10 ml-44 mt-5">
               logo
           </div>
           <div class="bg-black w-cover h-1">
@@ -31,6 +30,11 @@
   </template>
   
   <style>
+  .headerre3{
+      background-image: url(/cafe3.jpg);
+      height: 839px;
+      width: 100%;
+  }
   .loginblock{
       height: 600px;
       width: 400px;
