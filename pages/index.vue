@@ -26,7 +26,7 @@
               </p>
             </div>
             <div class="pt-[20px]">
-              <a class="underline" href="">ABOUT US</a>
+              <a class="underline" href="Aboutus">ABOUT US</a>
             </div>
           </div>
         </div>

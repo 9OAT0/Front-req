@@ -3,7 +3,9 @@
     class="bg-local bg-cover"
     style="background-image: url('/bg_mobile.jpg')"
   >
+  <div class="fixed">
     <Header-comp />
+  </div>
     <div class="flex justify-center text-xl mt-8">
       เจาะลึกกาแฟคั่วเข้มที่ครองใจคนไทยมาอย่างช้านาน
     </div>
@@ -16,10 +18,10 @@
           class="ez-toc-section"
           id="The_Rich_and_Bold_Flavor_of_Dark_Roast_Coffee_%E0%B9%80%E0%B8%88%E0%B8%B2%E0%B8%B0%E0%B8%A5%E0%B8%B6%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B8%84%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%84%E0%B8%A3%E0%B8%AD%E0%B8%87%E0%B9%83%E0%B8%88%E0%B8%84%E0%B8%99%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%A1%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%99"
         ></span
-        >The Rich and Bold Flavor of Dark Roast Coffee
-        เจาะลึกกาแฟคั่วเข้มที่ครองใจคนไทยมาอย่างช้านาน<span
-          class="ez-toc-section-end"
-        ></span>
+        >
+        <div class="text-black mb-4">The Rich and Bold Flavor of Dark Roast Coffee
+        เจาะลึกกาแฟคั่วเข้มที่ครองใจคนไทยมาอย่างช้านาน
+      </div>
       </h1>
       <div
         id="ez-toc-container"
@@ -240,12 +242,12 @@
           class="ez-toc-section-end"
         ></span>
       </h2>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           class="mt-10 h-[500px] w-[500px] mb-10"
           src="https://coffeepressthailand.com/wp-content/uploads/2023/06/ลักษณะกาแฟคั่วเข้ม.jpg"
         />
-        </div>
+      </div>
       <p>
         กาแฟคั่วเข้มนั้นได้รับความนิยมในหมู่ผู้ที่ชื่นชอบกาแฟด้วยรสชาติที่เข้มข้นและมีกลิ่นที่ชัดเจนและมีลักษณะเฉพาะที่แตกต่างจากการคั่วกาแฟระดับอื่น
         แต่สิ่งที่ทำให้แตกต่างจากกาแฟประเภทอื่นๆ คือถ้าหากเราคั่วกาแฟแบบเข้มนั้น
@@ -263,9 +265,9 @@
         ></span
         >ขั้นตอนกระบวนการคั่ว<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
-        class="h-[500px] w-[700px] mt-10 mb-10"
+          class="h-[500px] w-[700px] mt-10 mb-10"
           src="/กาแฟคั่วเข้ม_Photo1-1080x675.jpg"
         />
       </div>
@@ -292,7 +294,7 @@
         ></span
         >โปรไฟล์รสชาติ<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="h-[500px] w-[1000px] mt-10 mb-10"
@@ -324,7 +326,7 @@
         ></span
         >ปริมาณคาเฟอีน<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="h-[500px] w-[700px] mt-10 mb-10"
@@ -353,7 +355,7 @@
           class="ez-toc-section-end"
         ></span>
       </h2>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="h-[500px] w-[700px] mt-10 mb-10"
@@ -373,10 +375,10 @@
         ></span
         >สารต้านอนุมูลอิสระจากกาแฟ<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
-          class="w-[700px] "
+          class="w-[700px]"
           src="/750x422_763968_1499767610.jpg"
           data-src="https://coffeepressthailand.com/wp-content/uploads/2023/06/กาแฟคั่วเข้ม-นิยม.jpg"
           alt="กาแฟคั่วเข้ม นิยม"
@@ -405,7 +407,7 @@
           class="ez-toc-section-end"
         ></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -432,7 +434,7 @@
         >อารมณ์สมดุลด้วยกาแฟ<span class="ez-toc-section-end"></span>
       </h3>
 
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -461,7 +463,7 @@
           class="ez-toc-section-end"
         ></span>
       </h2>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -481,7 +483,7 @@
         ></span
         >การชงโดยเครื่อง French Press<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -508,7 +510,7 @@
         ></span
         >เอสเพรสโซ่ (Espresso)<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -534,7 +536,7 @@
         ></span
         >โคลด์บริว (Cold brew)<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -563,7 +565,7 @@
         ></span
         >กาแฟคั่วเข้มดื่มพร้อมอะไรดี<span class="ez-toc-section-end"></span>
       </h2>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -583,7 +585,7 @@
         ></span
         >ช็อกโกแลต<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -609,7 +611,7 @@
         ></span
         >เนื้อย่าง<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -635,7 +637,7 @@
         ></span
         >ถั่ว<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -660,7 +662,7 @@
         ></span
         >วิธีการเลือกกาแฟคั่วเข้ม<span class="ez-toc-section-end"></span>
       </h2>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -680,8 +682,8 @@
         ></span
         >เลือกใช้เมล็ดคุณภาพดี<span class="ez-toc-section-end"></span>
       </h3>
-      
-        <div class="flex justify-center">
+
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -694,7 +696,7 @@
           sizes="(max-width: 1056px) 100vw, 1056px"
         />
       </div>
-      
+
       <p>&nbsp;</p>
       <p>
         เมล็ดกาแฟที่ดีควรจะเป็นเมล็ดกาแฟที่ดื่มไปแล้วจะรู้สึกถึงความ Balance
@@ -710,7 +712,7 @@
         ></span
         >แหล่งกำเนิดและสายพันธุ์<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[700px]"
@@ -739,7 +741,7 @@
         ></span
         >วันที่คั่วและบรรจุภัณฑ์<span class="ez-toc-section-end"></span>
       </h3>
-        <div class="flex justify-center">
+      <div class="flex justify-center">
         <img
           decoding="async"
           class="w-[500px]"
@@ -778,9 +780,11 @@
         อย่าลืมเลือกเมล็ดกาแฟคุณภาพที่ดีและให้ความสำคัญกับความสดใหม่เพื่อเพิ่มอรรถรสในการดื่มกาแฟคั่วเข้มของคุณ
       </p>
       <p>&nbsp;</p>
-     
     </div>
   </div>
+  <div class="bg-transparent">
+  <star />
+</div>
   <Footer />
 </template>
 <style>
@@ -913,7 +917,7 @@ html {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-img{
+img {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }

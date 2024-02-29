@@ -3,7 +3,7 @@
     <div>
       <header-comp />
     </div>
-    <div class="flex justify-center text-xl mt-8">
+    <div class="flex justify-center mt-10 h-[500px]">
         จุดเริ่มต้นของ Latte Art ศิลปะการวาดบนกาแฟที่น่าหลงใหล
     </div>
     <div class="flex justify-center mt-10 h-[500px]">

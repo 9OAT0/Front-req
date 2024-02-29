@@ -3,8 +3,10 @@
       class="bg-local bg-cover scroll-smooth"
       style="background-image: url('/bg_mobile.jpg')"
     >
+    <div class="fixed w-full">
       <Header-comp />
-      <div class="flex justify-center text-xl mt-8">
+    </div>
+      <div class="flex justify-center text-xl pt-24">
         Specialty Coffee คืออะไร? ทำไมกาแฟไทยจึงฮิตหาทำ !
       </div>
       <div class="flex justify-center mt-10 h-[500px]">
