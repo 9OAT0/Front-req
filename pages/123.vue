@@ -3,6 +3,6 @@
     
 </template>
 <script setup>
-let asda = document.getElementById('ap')
+let asda = document.querySelector('#ap')
 console.log(asda);
 </script>

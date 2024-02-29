@@ -1,5 +1,6 @@
-let product = document.getElementById('product');
+let shop = document.getElementById('shop');
 
+console.log(shop)
 let shopItemsData = [
     {
     id: 1,
@@ -31,20 +32,21 @@ let shopItemsData = [
     type: 'MediumRoast',
 }];
 
-let generateproduct =() => {
-    return (sproduct.innerHTML = productItemsData.map((x)=>{
+let generateshop =() => {
+    return (shop.innerHTML = shopItemsData
+        .map((x)=>{
         return `
         <div class="product-items">
             <div class="ช่องใส่รูป">
                 <div class="รูป22">
-                    <img src="/Blend.jpg">
+                    <img src="${x.img}">
                 </div>
             </div>
             <div class="ช่องชื่อสินค้า">
-                PRI-DEE : Pridee Blend 100%Arabica Cofee Chocolate, Nutty, Caramel 350g       
+                ${x.name}       
             </div>
             <div class="ช่องราคา">
-                ฿145
+                ${x.price}
             </div>
             <div class="flex justify-center">
                 <a href="Productdetail">
@@ -59,4 +61,4 @@ let generateproduct =() => {
     }));
 };
 
-generateShop();
+generateshop();

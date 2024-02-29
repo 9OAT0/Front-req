@@ -2,7 +2,7 @@
   <div class="bg-[url('/bg_mobile.jpg')]">
     <div class="fixed w-screen">
     <Header-comp />
-  </div>
+    </div>
     <Hero />
         <div class="bg-white ml-[40px] mr-[40px] pb-[70px]">
       <div class="flex justify-center items-center -mt-[80px]">
