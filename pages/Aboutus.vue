@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-[url('/bg_mobile.jpg')]">
+  <div class="bg-[url('/bg_mobile.jpg')] w-full">
     <header-comp />
     <div class="flex justify-center items-center h-28 text-3xl text-black">
       <div>เกี่ยวกับร้านกาแฟ</div>
     </div>
     <main class="flex-container">
       <section class="flex-item">
-        <div class="card_img">
+        <div>
           <img src="/ร้านกาแฟ.jpg" alt="รูปที่ 1" />
         </div>
         <h2>ประวัติความเป็นมา</h2>

@@ -4,13 +4,10 @@
       <header-comp />
     </div>
     <div class="flex justify-center mt-10 h-[500px]">
-        จุดเริ่มต้นของ Latte Art ศิลปะการวาดบนกาแฟที่น่าหลงใหล
+      จุดเริ่มต้นของ Latte Art ศิลปะการวาดบนกาแฟที่น่าหลงใหล
     </div>
     <div class="flex justify-center mt-10 h-[500px]">
-      <img
-        src="/จุดเริ่มต้นของ-Latte-Art-1.webp"
-        alt=""
-      />
+      <img src="/จุดเริ่มต้นของ-Latte-Art-1.webp" alt="" />
     </div>
     <div class="ml-16 mr-16 mb-8 mt-4">
       <p>
@@ -122,9 +119,7 @@
                   class=""
                   id="%E0%B8%A5%E0%B8%A7%E0%B8%94%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87_LATTE_ART_%E0%B8%A1%E0%B8%B5%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%9A%E0%B8%9A"
                 ></span
-                >ลวดลายของ LATTE ART มีกี่แบบ ?<span
-                  class=""
-                ></span>
+                >ลวดลายของ LATTE ART มีกี่แบบ ?<span class=""></span>
               </h2>
             </div>
           </div>
@@ -209,12 +204,15 @@
                         หรือถ้าจะใช้เป็นการ Drawing ก็ทำได้หลายลายง่ายๆ เลยครับ
                       </p>
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="bg-transparent">
+        <star />
       </div>
     </div>
     <Footer />

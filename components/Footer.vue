@@ -6,8 +6,7 @@
         </div>
         <br>
         <div class="text-xl font-bold">
-            0819469470 <br>
-            mysite.gmail.com 
+            0819469470
         </div>
         <br>
         <div class="text-xl font-bold">

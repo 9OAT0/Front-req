@@ -102,6 +102,9 @@
         โดบสามารถตั้งค่าตามสูตรที่คุณต้องการ”
       </p>
     </div>
+    <div class="bg-transparent">
+      <star />
+    </div>
     <Footer />
   </div>
 </template>

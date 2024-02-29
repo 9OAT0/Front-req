@@ -10,7 +10,7 @@
             @click="toggleSlideBar"
           ></i>
         </button>
-        <a href="/" class="text-xl"> Pridee coffee </a>
+        <a href="/" class="text-xl w-max"> Pridee coffee </a>
       </h1>
       <div>
         <div
@@ -51,12 +51,11 @@
           </div>
         </transition>
       </div>
-      <div class="cart cursor-pointer">
+      <!-- <div class="cart cursor-pointer">
         <i class="fa-solid fa-cart-shopping"></i>
-      </div>
+      </div> -->
     </div>
     <SlideBar :is-open="isSlideBarOpen" @close="closeSlideBar"></SlideBar>
-    <!-- Pass the visibility state as a prop -->
   </div>
 </template>
 

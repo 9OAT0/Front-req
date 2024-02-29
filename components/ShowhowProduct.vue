@@ -5,17 +5,15 @@
       <div class="mt-4 ml-[25px]">
         เมล็ดกาแฟ
       <div class="text-sm mr-32 ml-8 mt-4 ">
-        Coffee Press ได้คัดเลือกเมล็ดกาแฟ อราปิก้า 100% จากแหล่งดอยช้าง จังหวัดเชียงราย ที่มีชื่อเสียงในด้านเมล็ดกาแฟระดับโลก โดยเริ่มตั้งแต่เลือกฟาร์มที่มีคุณภาพดี ไม่ใช้ยาฆ่าแมลง คัดเลือกเมล็ดอย่างพิถีพิถัน แล้วนำคั่วด้วยสูตรเฉพาะของ Coffee Press ทำให้กาแฟเข้มข้นหอมกรุ่น ตามเอกลักษณ์กาแฟไทยชั้นดี
+        Pridee Coffee Roasters ได้คัดเลือกเมล็ดกาแฟที่มีชื่อเสียงในด้านเมล็ดกาแฟต่างๆ โดยเริ่มตั้งแต่เลือกฟาร์มที่มีคุณภาพดี ไม่ใช้ยาฆ่าแมลง คัดเลือกเมล็ดอย่างพิถีพิถัน แล้วนำคั่วด้วยสูตรเฉพาะของ Pridee Coffee Roasters ทำให้กาแฟเข้มข้นหอมกรุ่น ตามเอกลักษณ์กาแฟชั้นดี
       </div>
       </div>
     </div>
     <div class="flex scrollable-container mt-8 ml-20 bg-clip-content">
-      <ShowProduct />
-      <ShowProduct />
-      <ShowProduct />
-      <ShowProduct />
-      <ShowProduct />
-      <ShowProduct />
+      <ShowProduct text='PrideeBlend' image='/Blend.jpg' page="/Productdetail"/>
+      <ShowProduct text='EthiopiaGelanaGeshaNaturalG1' image="/427134255_434821192389813_352376848246311866_n.jpg" page="/Productdetail"/>
+      <ShowProduct text='EthiopiaKongaG1Washad' image="/425317857_428598959678703_1061220152207252595_n.jpg" page="/Productdetail"/>
+      <ShowProduct text='HouseBlend' image="/387145320_364134009458532_2933141215424069986_n.jpg" page="/Productdetail"/>
     </div>
   </div>
 </template>
