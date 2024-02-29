@@ -87,7 +87,7 @@
     border-top: solid 0.5px;
     display:flex ;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     
 }
 .ลบสินค้า {
@@ -101,7 +101,7 @@
 }
 .กลับไปซื้อสินค้า {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: 56px;
     align-items: center;
 }

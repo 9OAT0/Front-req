@@ -32,6 +32,8 @@
         </div>
     </div>
 </template> 
+<script>
+</script>
 <style>
 .img {
     display: flex;
