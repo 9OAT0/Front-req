@@ -26,20 +26,20 @@
                     <h3 style="width: 350px; margin-top: 20px;">text text text text text text text text text</h3>
                 </div>
             </div>
-            <div class="mt-10 flex flex-row justify-between">
+            <div class="mt-10 flex flex-row">
                 <div class="text-2xl">
                     <h1 style="margin-left: 80px;"> สถานะ </h1>
                     <h1 style="margin-left: 40px;"> ตรวจสอบข้อมูล </h1>
                 </div>
                 <div class="text-2xl mr-96">
-                    <div class="flex justify-center mr-36">
+                    <div class="flex justify-center ml-36">
                        <a href="refundpage">
                           <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-4 rounded">
                                ยกเลิกการคืนสินค้า
                           </button>
                        </a>
                     </div>
-                    <div class="ml-6">
+                    <div class="ml-40">
                         ภายในอีก 03.00.00
                     </div>
                 </div>

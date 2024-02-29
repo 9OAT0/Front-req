@@ -1,7 +1,8 @@
 <template>
-  <div  class="headerf3 flex  text-black justify-center">
+  <div  class=" flex  text-black justify-center">
+    <img src="/public/cafe8.jpg" class="bgimg">
       <div class="loginblock bg-orange-200 rounded-3xl font-bold">
-          <div class="bg-red-500 h-10 w-10 ml-44 mt-5">
+          <div class=" h-10 w-10 ml-44 mt-5">
               logo
           </div>
           <div class="bg-black w-cover h-1">
@@ -10,21 +11,21 @@
           <div class=" mt-5 ml-2 text-2xl">
               Old Password
           </div>
-          <div class="flex w-auto mt-2 tems-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black" >
+          <div class="flex w-auto mt-2 tems-center rounded-[28px] p-[8px] bg-white border border-solid border-black" >
               <span class="pr-2"> 
                     <i class="fa-solid "></i>
               </span>
-              <input type="" placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px;">
+              <input type="" placeholder="Enter" class="bg-white focus:outline-none placeholder:text-black" style="width: 300px;">
           </div>
           <br>
           <div class=" mt-5 ml-2 text-2xl">
               New password
-          </div>
-          <div class="flex w-auto  mt-2 tems-center rounded-[28px] p-[8px] bg-transparent border border-solid border-black" >
+          </div>    
+          <div class="flex w-auto  mt-2 tems-center rounded-[28px] p-[8px] bg-white border border-solid border-black" >
               <span class="pr-2"> 
                     <i class="fa-solid "></i>
               </span>
-              <input type="" placeholder="Enter" class="bg-transparent focus:outline-none placeholder:text-black" style="width: 300px;">
+              <input type="" placeholder="Enter" class="bg-white focus:outline-none placeholder:text-black" style="width: 300px;">
           </div>
           <br>
           <br>
@@ -42,10 +43,6 @@
   </template>
   
   <style>
-  .headerf3{
-      background-image: url(/cafe8.jpg);
-      height: 839px;
-  }
   .loginblock{
       height: 600px;
       width: 400px;

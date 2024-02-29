@@ -1,12 +1,12 @@
 <template>
   <div
-    class="p-[28px] mt-10 bg-white h-[450px] w-[300px] rounded-2xl flex flex-col justify-center items-center m-7"
+    class="p-[28px] mt-16 bg-white h-[450px] w-[300px] rounded-2xl flex flex-col justify-center items-center m-7"
   >
     <div class="">
       <img src="/Blend.jpg" alt="นี้กาแฟซื้อป่าว" class="h-[250px]" />
     </div>
     <div class="text-center text-gray-600 font-bold pt-4">
-      PREDEE BLEND
+      PRIDEE BLEND
       <div>
         Ground 100% Arabica Coffee
         <p class="text-center">กาแฟหอมอร่อยสุดๆ</p>
@@ -15,8 +15,7 @@
     <button
       class="bg-CartBG h-[50px] p-4 flex items-center justify-center rounded-lg text-[20px] text-white mt-4"
     >
-      <i class="fa-solid fa-cart-shopping mr-4"></i>
-      เพิ่มลงตระกร้า
+      ดูข้อมูลเพิ่มเติม
     </button>
   </div>
 </template>
