@@ -1,6 +1,6 @@
 <template>
     <Header-comp />
-    <div v-for="item in shopItemsData" :key="item.id" class="รูปสินค้า">
+    <div v-for="item in shopItemsData" :key="item.id" class="รูปสินค้า ">
         <div class="flex11">
             <div class="container11">
                 <div class="รูป">
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="modal" v-show="isModalVisible">
         <div class="modal-bg" @click="closeModal"></div>
         <div class="modal-page">
@@ -108,24 +108,104 @@ export default {
 }
 
 
+
 </script>
 
 <style scoped>
 .รูปสินค้า {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
-    margin-top: 65px; 
+    align-items: center;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    object-fit: scale-down;
+}
+.รูป {
+    height: 390px;
+    width: 420px;
+    overflow: hidden;
+    border: solid 0.5px;
     
 }
-.รายละเอียดสินค้า {
-    height: auto;
+.flex11 {
+    display: flex;
+    height: 520px;
     width: 998px;
-    display: flex;
 }
-.con1 {
+.container12 {
+    height: 80px;
+    width: 420px;
+    margin-top: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+.P1 {
+    height: 80px;
+    width: 80px;
+    border: solid 0.5px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.P2 {
+    height: 80px;
+    width: 80px;
+    border: solid 0.5px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.P3 {
+    height: 80px;
+    width: 80px;
+    border: solid 0.5px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.P4 {
+    height: 80px;
+    width: 80px;
+    border: solid 0.5px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.P5 {
+    height: 80px;
+    width: 80px;
+    border: solid 0.5px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.container13 {
+    height: 520px;
+    width: 518px;
+    margin-left: 30px;
+}
+.ชื่อสินค้า {
+    height: 100px;
+    width: 518px;
+    font-size: 24px;
+}
+.ราคา {
+    width: 518px;
+    height: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #58790C;
+}
+.จำนวน {
+    height: 20px;
+    width: 518px;
+    display: flex;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.สั่งซื้อสินค้า {
+    height: 60px;
+    width: 518px;
+    margin-top: 40px;
 }
 .modal,
 .modal-bg {
@@ -177,6 +257,7 @@ export default {
     align-items: center;
 }
 .กรอบชื่อสินค้า {
+    height: 150px;
     width: 450px;
     display: flex;
 }
@@ -210,7 +291,20 @@ export default {
     font-size: 20px;
     border-radius: 10px;
 }
-/* Your component-specific styles here */
+.f1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 0.5px;
+}
+.img2 {
+    height: 100%;
+    width: 600px;
+}
+.กรอบ {
+    display: flex;
+    justify-content: center;
+}
+
 </style>
 
 

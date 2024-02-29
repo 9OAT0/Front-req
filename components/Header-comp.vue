@@ -51,6 +51,9 @@
           </div>
         </transition>
       </div>
+      <div class="cart cursor-pointer">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
     </div>
     <SlideBar :is-open="isSlideBarOpen" @close="closeSlideBar"></SlideBar>
     <!-- Pass the visibility state as a prop -->
@@ -203,5 +206,12 @@ export default {
 .slide-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+.cart {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left:1000px;
+  font-size: 30px;
 }
 </style>
