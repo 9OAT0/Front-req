@@ -3,33 +3,34 @@
     <div class="text-center text-[36px] mt-10">สินค้าทั้งหมด</div>
     <div class="align-middle justify-center  mt-10">
         <div class="product" id="shop">
-            <div v-for="item in shopItemsData" :key="item.id" class="product-items cursor-pointer" @click="viewProductDetail(item.id)">
-                <div class="ช่องใส่รูป">
-                    <div class="รูป22">
-                        <img :src="item.img" alt="Product Image">
+            <div v-for="item in shopItemsData" :key="item.id">
+                <div onclick="window.location.href='Productdetail';" class="product-items cursor-pointer" >
+                    <div class="ช่องใส่รูป">
+                        <div class="รูป22">
+                            <img :src="item.img" alt="Product Image">
+                        </div>
                     </div>
-                </div>
-                <div class="ช่องชื่อสินค้า">
-                    {{ item.name }}
-                </div>
-                <div class="ช่องราคา">
-                    {{ item.price }}
-                </div>
-                <div class="flex justify-center">
-                    <a href="Productdetail">
-                        <div class="bg-CartBG w-[160px] h-[45px] flex items-center justify-center rounded-lg text-[20px] text-white piot cursor-pointer">
+                    <div class="ช่องชื่อสินค้า">
+                        {{ item.name }}
+                    </div>
+                    <div class="ช่องราคา">
+                        {{ item.price }}
+                    </div>
+                    <div class="BT flex justify-center ">
+                        <div class=" bg-CartBG w-[160px] h-[45px] flex items-center justify-center rounded-lg text-[20px] text-white piot cursor-pointer" @click="openModal(item.id)">
                             <i class="fa-solid fa-cart-shopping mr-4"></i>
                             สั่งซื้อสินค้า
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
 </template>
 
+
 <script>
+
 export default {
     data() {
         return {
@@ -68,19 +69,20 @@ export default {
         }
     },
     methods: {
-        generateshop() {
-            // You may not need this method anymore
-        },
         viewProductDetail(productId) {
             // Use Vue Router to navigate to the product detail page
-            this.$router.push({ name: 'Productdetail', params: { productId: }});
+            this.$router.push({ name: 'Productdetail', params: { id: productId }});
         }
     }
 }
+
 </script>
 
 
 <style scoped>
+.BT{
+    z-index: 99;
+}
 .product {
     display: flex;
     justify-content: center;

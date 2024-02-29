@@ -27,7 +27,7 @@
                     จำนวน
                 </div>
                 <div class="สั่งซื้อสินค้า">
-                    <div class="addbutton cursor-pointer" @click="openProduct(item.id)">
+                    <div class="addbutton cursor-pointer" @click="openModal(item.id)">
                         <i class="fa-solid fa-cart-shopping "></i>
                         สั่งซื้อสินค้า
                     </div>
@@ -85,19 +85,19 @@ export default {
                     price: 350,
                     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, veniam odit amet et sint nulla.',
                     type: 'Medium',
-                },/* Your product data here */ ],
+                }, /* Your product data here */ ],
             isModalVisible: false,
             productIndex: null
         }
     },
     methods: {
-        openProduct(index) {
+        openModal(index) {
             this.productIndex = index;
             this.isModalVisible = true;
         }
     },
     methods: {
-        openProduct(index) {
+        openModal(index) {
             this.productIndex = index;
             this.isModalVisible = true;
         },
