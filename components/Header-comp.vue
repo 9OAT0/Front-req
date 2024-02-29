@@ -27,7 +27,7 @@
         <!-- Overlay -->
         <transition name="slide">
           <div
-            class="overlay filtered-items rounded-[14px] transition-transform w-[500px] p-[8px] pl-[15px] bg-transparent"
+            class="overlay filtered-items rounded-[14px] transition-transform max-w-[500px] p-[8px] pl-[15px] bg-transparent"
             v-show="showOverlay"
             @click="clearSearch"
           >
@@ -165,7 +165,7 @@ export default {
   left: 0;
   background-color: white;
   border: 1px solid #ccc;
-  z-index: 1000;
+  z-index: 99;
 }
 .overlay ul {
   list-style-type: none;

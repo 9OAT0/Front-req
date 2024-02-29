@@ -1,4 +1,5 @@
 <template>
+    <div style="background-image: url('/bg_mobile.jpg')" class="pb-8">
     <div class="star">
             <div class="post">
                 <div class="text">ขอบคุณสำหรับคะแนนและความคิดเห็น!</div>
@@ -18,13 +19,14 @@
                 <form action="#">
                     <header></header> 
                     <div class="textarea">
-                        <textarea cold="30" placeholder="กรอกความคิดเห็นของคุณ"></textarea>
+                        <textarea cold="30" placeholder="กรอกความคิดเห็นของคุณ" class="text-white"></textarea>
                     </div>
                     <div class="btn">
                         <button type="submit">Post</button>
                     </div>
                 </form>     
     </div>
+</div>
 </template>
 <style>
 .star{
