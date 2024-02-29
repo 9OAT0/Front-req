@@ -60,7 +60,8 @@
     <a href="My Orders">My Orders</a>
     <a href="Favorites">Favorites</a>
   </div>
-  <div class="text-center my-40">
-    ที่กดชอบไว้อะ
-  </div>
+  <div class="text-left mx-96">
+      <label for="fname">Username</label>
+      <input type="text" id="fname" name="fname" value="John">
+    </div>
 </template>

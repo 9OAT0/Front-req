@@ -60,13 +60,19 @@
       <a href="#">Favorites</a>
     </div>
     <div class="text-left mx-96">
-     usename
+      <label for="fname">Username</label>
+      <input type="text" id="fname" name="fname" value="John">
     </div>
-    <div class="text-left mx-52 my-16 border border-gray-300 rounded h-[400px] w-[1000px] ">
+    <div class="text-left mx-52 my-16 ">
       ที่อยู่หลัก
       <form>
-      <label for="tel ">Frits Name</label>
-      <input type="text" id ="tel" class="text-black border border-gray-300 rounded-xl w-[100px] h-10">
+      <input type="text" id ="tel" class="text-black border border-gray-300 rounded-t-none w-[300px] h-52">
+      </form>
+    </div>
+    <div class="text-left mx-52 my-16 ">
+      เพิ่มที่อยู่อื่น
+      <form>
+      <input type="text" id ="tel" class="text-black border border-gray-300 rounded-t-none w-[300px] h-52">
       </form>
     </div>
    

@@ -60,6 +60,10 @@
     <a href="My Orders">My Orders</a>
     <a href="Favorites">Favorites</a>
   </div>
+  <div class="text-left mx-96">
+      <label for="fname">Username</label>
+      <input type="text" id="fname" name="fname" value="John">
+    </div>
   <div class="">
   <div class="container mx-auto h-full flex item-center gap-4">
     <div class="w-1/3 flex flex-col justify-center items-center">
@@ -73,7 +77,7 @@
             <form action="">
               <label for="birthday">Birthday:</label>
               <input type="date" id="birthday" class="text-notthesamegreen" name="birthday">
-              <input type="submit">
+              <input type="submit" value="Submit">
             </form>
             </div>
           </div>
