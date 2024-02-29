@@ -1,9 +1,11 @@
 <template>
   <div class="bg-[url('/bg_mobile.jpg')]">
+    <div class="fixed w-screen">
     <Header-comp />
+  </div>
     <Hero />
         <div class="bg-white ml-[40px] mr-[40px] pb-[70px]">
-      <div class="flex justify-center items-center -mt-[40px]">
+      <div class="flex justify-center items-center -mt-[80px]">
         <div class="pl-[40px] pr-[40px] pt-[75px] ml-[40px] mr[40px] pb-8 w-[670px]">
           <div class="text-center">
             <h2 class="pb-[20px] text-2xl font-bold">“Coffee ที่เสิร์ฟคู่ Story”</h2>
@@ -19,7 +21,7 @@
                 <br /><br />เป็นเพื่อนที่พร้อมจะเล่าเรื่องสนุกๆ
                 เกี่ยวกับกาแฟด้วยมิตรภาพและรอยยิ้ม
                 แต่บริการด้วยความจริงจังและจริงใจ
-                พร้อมเสิร์ฟประสบการณ์ด้านกาแฟที่โดดเด่น ด้วยทีมดีกรีแชมป์โลกจาก
+                พร้อมเสิร์ฟประสบการณ์ด้านกาแฟที่โดดเด่นจาก
                 Pridee Coffee Roasters
               </p>
             </div>
@@ -33,5 +35,6 @@
     <ShowhowBotqarm />
     <ShowhowProduct />
     <Footer />
+    <store />
   </div>
 </template>
