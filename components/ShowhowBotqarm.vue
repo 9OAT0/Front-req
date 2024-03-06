@@ -151,7 +151,7 @@ export default {
     };
 
     onMounted(async () => {
-      await db.bookmarks.clear(); // ลบข้อมูลที่เก่าออกก่อน
+      await db.bookmarks.clear(1); // ลบข้อมูลที่เก่าออกก่อน
       await saveBookmarks(newBookmarks);
       fetchBookmarks();
     });

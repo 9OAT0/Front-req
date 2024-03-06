@@ -5,7 +5,7 @@
         </div>
         <div class="ช่องยอดรวมสินค้า">
             <div class="ml-[10px]"> ยอดรวมสินค้า  </div>
-        </div>
+        </div> 
         <div class="ช่องยอดรวมตะกร้าสินค้า">
             <div class="ml-[10px]"> ยอดรวมตะกร้าสินค้า</div>
         </div>

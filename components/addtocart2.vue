@@ -1,5 +1,5 @@
 <template>
-    <a href="confirmorder">
+    <a href="">
         <div class="addbutton2">
             <i class="fa-solid fa-cart-shopping"></i>
             สั่งซื้อสินค้า
